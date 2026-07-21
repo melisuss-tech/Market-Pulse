@@ -1,10 +1,60 @@
 {
   "digest": "Endpoint Security Market Pulse",
-  "generated_at": "2026-07-20T18:20:31.894971+00:00",
+  "generated_at": "2026-07-21T20:58:34.737373+00:00",
   "period_days": 7,
-  "item_count": 28,
-  "source_count": 8,
+  "item_count": 29,
+  "source_count": 10,
   "items": [
+    {
+      "company": "Check Point",
+      "source": "Check Point Official Blog",
+      "title": "Inline Email Security and Microsoft 365: A Practical View of Mail Routing, Risk, and Prevention",
+      "link": "https://blog.checkpoint.com/email-security/inline-email-security-and-microsoft-365-a-practical-view-of-mail-routing-risk-and-prevention/",
+      "feed_description": "Microsoft’s guidance on inbound and outbound mail routing for third-party email security has prompted a fair question from customers: how should organizations evaluate inline email security for Microsoft 365? The answer depends less on whether a solution is inline and more on how that inline architecture is implemented. Microsoft is right to call attention to mail flow designs that can introduce unnecessary complexity, create authentication challenges, duplicate processing, or disrupt the expected Microsoft 365 experience. Those risks are real when a third-party service is bolted onto the environment without careful integration. That is also why architecture matters. A modern enterprise […] The post Inline Email Security and Microsoft 365: A Practical View of Mail Routing, Risk, and Prevention appeared first on Check Point Blog .",
+      "published": "2026-07-21T20:30:09+00:00",
+      "summary": "Check Point highlights how inline email security can integrate with Microsoft 365 without disrupting native controls. Their solution uses technologies like Authenticated Received Chain (ARC) and trusted connectors to preserve authentication and message integrity. The approach adds pre-delivery inspection for advanced threats while maintaining Microsoft’s mail flow and compliance controls. This integration allows organizations to enhance phishing and AI-driven attack prevention without compromising user experience.",
+      "features": [
+        "Integration with Microsoft 365 using trusted connectors and sender configurations",
+        "Authenticated Received Chain (ARC) for maintaining authentication context",
+        "Pre-delivery inspection against phishing, business email compromise, QR code phishing, zero-day malware, and AI-driven attacks",
+        "Preservation of Microsoft Defender and Exchange Online Protection controls",
+        "Defense-in-depth approach combining native and third-party security layers"
+      ],
+      "why_it_matters": "Organizations using Microsoft 365 can strengthen email security by adding inline inspection without disrupting existing workflows, reducing exposure to sophisticated threats before they reach users."
+    },
+    {
+      "company": "SentinelOne",
+      "source": "SentinelLabs Threat Research",
+      "title": "Iran War Cyber Threat Landscape | A Midyear Assessment on What Matters",
+      "link": "https://www.sentinelone.com/labs/iran-war-cyber-threat-landscape-a-midyear-assessment-on-what-matters/",
+      "feed_description": "In April, SentinelLABS’ Tom Hegel published an initial assessment of the first five weeks of the conflict. Three months later, the evidence supports refinement.",
+      "published": "2026-07-21T13:00:21+00:00",
+      "summary": "SentinelLabs reports Iran-linked cyber threats involve multiple actors (MOIS, IRGC units, and personas) leveraging persistent access, supply chain compromises, and OT systems. Key risks include access optionality for espionage or disruption, AI-assisted attacks, and OT vulnerabilities like Rockwell Automation PLCs. Public claims by personas like Handala often lack verified impact, complicating attribution.",
+      "features": [
+        "Iran-linked groups (MOIS, IRGC Cyber-Electronic Command, personas like Handala) use persistent access and supply chain compromises",
+        "Access optionality enables shifting from espionage to disruption based on operational needs",
+        "OT risks highlighted through Rockwell Automation/Allen-Bradley PLC compromises with operational disruption",
+        "AI-assisted coding and impersonation observed in attack operations",
+        "Personas like Handala and Homeland Justice serve as operational infrastructure for attribution masking and influence operations"
+      ],
+      "why_it_matters": "Organizations must prioritize securing supply chains, limiting administrative access, and monitoring OT systems to mitigate Iran-linked cyber threats. Security teams should remain cautious of unverified public claims and focus on persistent access detection."
+    },
+    {
+      "company": "HP Security",
+      "source": "HP Security Advisories and Bulletins",
+      "title": "Severity: Critical | Title: AMD Graphics August 2025 Security Update",
+      "link": "https://support.hp.com/us-en/document/ish_13188050-13188072-16",
+      "feed_description": "Description: AMD has informed HP of potential vulnerabilities in some AMD Graphics components, which might lead to loss of confidentiality, loss of integrity, loss of availability, system crash, arbitrary writes, out of bounds read, or denial of service. AMD is releasing software updates to mitigate the potential vulnerabilities. CVEs: CVE-2023-31322 CVE-2023-31325 CVE-2025-0009 CVE-2021-26383 CVE-2024-36352 CVE-2021-26377 CVE-2025-0011 CVE-2023-31306 CVE-2023-31326 CVE-2023-31365 CVE-2021-46750 HP ID: HPSBHF04073 Rev. 2 Published: Tue, 21 Jul 2026 00:00:00 GMT",
+      "published": "2026-07-21T00:00:00+00:00",
+      "summary": "HP Security released a critical update addressing vulnerabilities in AMD Graphics components. The update mitigates risks including loss of confidentiality, integrity, availability, system crashes, arbitrary writes, out-of-bounds reads, and denial of service. Affected systems require the update to prevent exploitation of the listed CVEs. AMD has provided software patches to address these issues.",
+      "features": [
+        "CVE-2023-31322, CVE-2023-31325, CVE-2025-0009, CVE-2021-26383, CVE-2024-36352, CVE-2021-26377, CVE-2025-0011, CVE-2023-31306, CVE-2023-31326, CVE-2023-31365, CVE-2021-46750",
+        "Critical severity rating for all listed vulnerabilities",
+        "Potential impacts: data loss, system crashes, arbitrary writes, out-of-bounds reads, denial of service",
+        "HP ID: HPSBHF04073 Rev. 2 with published date July 21, 2026"
+      ],
+      "why_it_matters": "Organizations must apply the AMD graphics update to prevent exploitation of critical vulnerabilities that could compromise system integrity and availability. Security teams should prioritize patching affected endpoints to mitigate potential attacks."
+    },
     {
       "company": "SentinelOne",
       "source": "SentinelOne Official Blog",
@@ -12,15 +62,15 @@
       "link": "https://www.sentinelone.com/blog/the-agentic-soc-transforming-data-into-defensive-velocity/",
       "feed_description": "Transform SOC data chaos into autonomous intelligence with modern AI pipelines and agentic AI to empower human analysts.",
       "published": "2026-07-20T13:00:54+00:00",
-      "summary": "SentinelOne introduces the Agentic SOC framework to address SOC scalability and cognitive overload by redefining data processing and automation. Key components include Singularity AI Data Pipelines for normalizing telemetry, Purple AI for autonomous threat investigation, and Hyperautomation for governed response workflows. The solution emphasizes structured data foundations to enable AI-driven detection and reduce analyst administrative burdens.",
+      "summary": "SentinelOne highlights challenges in traditional SOCs, including manual data aggregation and cognitive overload for analysts. The company introduces its Agentic SOC framework, leveraging AI-driven data pipelines and Purple AI for automated threat investigation. Key improvements include structured data normalization, real-time telemetry synthesis, and autonomous response workflows to accelerate detection and reduce analyst workload.",
       "features": [
-        "Singularity AI Data Pipelines for normalizing telemetry into OCSF-standardized formats",
-        "Purple AI agentic reasoning layer for automated incident investigation and threat correlation",
-        "Hyperautomation workflows with human-in-the-loop governance for defensive responses",
-        "AI SIEM with indexless architecture for petabyte-scale query processing",
-        "Structured data foundation enabling Autonomous Security Intelligence (ASI)"
+        "Singularity AI Data Pipelines for normalizing telemetry into OCSF-compliant formats",
+        "Purple AI agentic reasoning layer for autonomous incident investigation and containment recommendations",
+        "AI SIEM with indexless architecture enabling petabyte-scale query performance",
+        "Governed Hyperautomation workflows with human-in-the-loop approvals for defensive actions",
+        "Autonomous Security Intelligence (ASI) integrating data, investigation, and response as unified systems"
       ],
-      "why_it_matters": "This framework reduces SOC operational friction by automating data synthesis and investigation, allowing analysts to focus on strategic decisions. It improves detection speed and response efficiency while mitigating risks from fragmented, low-quality telemetry."
+      "why_it_matters": "Organizations can enhance SOC efficiency by automating data processing and analysis, allowing analysts to focus on strategic decisions. This reduces response times and mitigates threats more effectively by addressing the root cause of data fragmentation and operational delays."
     },
     {
       "company": "SentinelOne",
@@ -29,14 +79,15 @@
       "link": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-29-8/",
       "feed_description": "Authorities sanction Russian-based cybercriminals, attackers deploy Starland malware, and 300 imposter GitHub repos push BoryptGrab infostealer.",
       "published": "2026-07-17T16:40:44+00:00",
-      "summary": "SentinelOne highlights recent cybersecurity developments including sanctions against Russian cybercriminals and dismantling of bulletproof hosting infrastructure, a financially-motivated threat group deploying Starland malware via trojanized remote user platforms, and nearly 300 imposter GitHub repositories distributing BoryptGrab malware for data exfiltration. These incidents underscore evolving ransomware tactics and supply chain threats targeting critical infrastructure and enterprise data. The U.S. and EU actions demonstrate increased international cooperation against state-sponsored cyber operations.",
+      "summary": "SentinelOne highlights EU/UK sanctions against Russian cybercriminals and state-sponsored actors targeting critical infrastructure, including a $10M reward for info on foreign government ties. A financially-motivated Russian group (UAT-11795) is trojanizing remote user platforms to deploy Starland malware for data theft and ransomware. Over 300 imposter GitHub repos distribute BoryptGrab malware, impersonating security tools to steal sensitive data from 19 browsers and 32 crypto wallets.",
       "features": [
-        "Sanctions targeting Russian GRU/FSB entities and ransomware infrastructure providers",
-        "Starland malware with capabilities for data theft, privilege escalation, and C2 redundancy",
-        "BoryptGrab malware distribution via spoofed GitHub repositories with browser and wallet data exfiltration",
-        "Threat actor use of social engineering and code injection to bypass encryption protections"
+        "Sanctions against Russian GRU/FSB entities and ransomware infrastructure providers",
+        "Starland malware's persistence via registry modification and multi-stage loader",
+        "BoryptGrab's data exfiltration targeting 19 browsers and 32 crypto wallets",
+        "GitHub repo impersonation using spoofed trust badges and rotating ZIP archives",
+        "C2 communication via Telegram bots and Polygon smart contracts"
       ],
-      "why_it_matters": "Endpoint security teams must enhance detection for trojanized software distribution and supply chain attacks, while organizations should verify software authenticity and monitor for data exfiltration tactics. The incidents highlight the need for advanced threat intelligence and proactive response to ransomware and credential theft campaigns."
+      "why_it_matters": "Organizations must verify software sources and monitor for trojanized tools, as these campaigns exploit social engineering and supply chain vulnerabilities to steal credentials and cryptocurrency. Security teams should prioritize detecting anomalous C2 communications and mitigating ransomware infrastructure ties."
     },
     {
       "company": "Microsoft",
@@ -45,9 +96,14 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/17/microsoft-at-black-hat-usa-2026-defending-trust-in-the-age-of-ai-and-supply-chain-attacks/",
       "feed_description": "Join Microsoft Security at Black Hat USA 2026 for supply chain research, hands-on security experiences, expert conversations, and our reception. The post Microsoft at Black Hat USA 2026: Defending trust in the age of AI and supply chain attacks appeared first on Microsoft Security Blog .",
       "published": "2026-07-17T16:00:00+00:00",
-      "summary": "Microsoft highlighted advancements in defending against AI-driven threats and supply chain attacks at Black Hat USA 2026. The focus includes strengthening trust in technology through enhanced detection and response capabilities. The Secure Future Initiative progress report outlines measures to address emerging risks in AI and supply chain security. No specific product releases or version updates were detailed in the provided content.",
-      "features": [],
-      "why_it_matters": "Endpoint security teams should prioritize AI-driven threat detection and supply chain resilience strategies to mitigate emerging risks. The emphasis on trust defense frameworks underscores the need for proactive measures against sophisticated attacks."
+      "summary": "Microsoft highlighted advancements in defending against AI-driven attacks and supply chain threats at Black Hat USA 2026. The company emphasized progress on its Secure Future Initiative, focusing on AI-powered threat detection and supply chain security enhancements. Key announcements included new capabilities to identify and mitigate AI-generated malware and exploit supply chain vulnerabilities.",
+      "features": [
+        "AI-powered threat detection for identifying AI-generated malware",
+        "Enhanced supply chain security to detect and block compromised dependencies",
+        "Integration of real-time threat intelligence with Microsoft Defender for Endpoint",
+        "Expanded detection rules for supply chain attack patterns"
+      ],
+      "why_it_matters": "Organizations must adopt these updates to counter emerging AI-driven threats and supply chain vulnerabilities, ensuring robust defenses against sophisticated attacks targeting critical infrastructure."
     },
     {
       "company": "Check Point",
@@ -56,15 +112,16 @@
       "link": "https://blog.checkpoint.com/hybrid-mesh/the-state-of-hybrid-sase-built-in-vs-bolted-on/",
       "feed_description": "Hybrid SASE is not a label – it is an architectural commitment. Many enterprises pay twice for SASE: once for the platform, and again for the overhead of integrating and managing components never designed to work as one architecture. Check Point’s Hybrid SASE takes a different path: a single operating model that unifies access and policy. That distinction decides whether traffic is secured and routed predictably – or whether teams spend years working around architectural seams. Take a typical workday. A remote employee connects from a managed laptop, a branch office user accesses a private application, and a contractor opens […] The post The State of Hybrid SASE: Built-In vs. Bolted-On appeared first on Check Point Blog .",
       "published": "2026-07-17T13:00:51+00:00",
-      "summary": "Check Point introduces Hybrid SASE as an architectural approach unifying access and security policies across hybrid environments. The solution emphasizes a 'hybrid-by-design' model that integrates networking and security into a single operating system, avoiding fragmented integration challenges. It addresses performance and security through full-mesh private connectivity and distributed enforcement. The platform is positioned to reduce operational complexity and costs by eliminating siloed management of hybrid architectures.",
+      "summary": "Check Point introduces Hybrid SASE as an architectural approach unifying access and security policies across users, devices, and networks. The solution emphasizes a 'hybrid-by-design' model that avoids integration complexities by treating networking and security as a single architecture. It addresses operational inefficiencies in legacy hybrid setups by eliminating siloed policies and centralized inspection points. The platform's full mesh private connectivity and distributed enforcement improve security and performance through a unified operating model.",
       "features": [
-        "Full mesh private connectivity across 85+ global Points of Presence",
-        "Distributed security enforcement via SASE Agent and Cloud Edge Gateways",
-        "Unified operations with single policy engine and console",
-        "Integrated threat prevention using ThreatCloud AI and ZTNA",
-        "Automated application recognition and traffic steering for 10,000+ apps"
+        "Full mesh private connectivity across 85+ global Points of Presence (PoPs)",
+        "Distributed security enforcement via SASE Agent (endpoint) and Cloud Edge Gateways",
+        "Unified policy engine and console for managed/unmanaged access, tunnels, and security events",
+        "Integrated threat prevention using ThreatCloud AI and Zero Trust Network Access (ZTNA)",
+        "Automated traffic steering and link failover for 10,000+ applications",
+        "Built-in redundancy, autoscaling, and high-availability tunnels"
       ],
-      "why_it_matters": "Endpoint security teams benefit from consistent policy enforcement across devices and networks, while IT administrators gain simplified management of hybrid environments with reduced reliance on fragmented tools. The architecture improves security effectiveness and operational predictability by embedding protection into the network infrastructure."
+      "why_it_matters": "Organizations benefit from reduced operational complexity and improved security through distributed enforcement, avoiding single points of failure. The unified architecture ensures consistent policy application and visibility across hybrid environments, enhancing both performance and threat prevention capabilities."
     },
     {
       "company": "Palo Alto Networks",
@@ -73,15 +130,16 @@
       "link": "https://unit42.paloaltonetworks.com/siemens-rox-ii-zero-day-vulnerabilities/",
       "feed_description": "A technical analysis of three chained zero-day vulnerabilities in Siemens ROX II OT switches that allow privilege escalation and persistent root access. The post Three Steps to the Terminal: A Siemens ROX II Zero-Day Trilogy appeared first on Unit 42 .",
       "published": "2026-07-17T10:00:24+00:00",
-      "summary": "Palo Alto Networks Unit 42 researchers, in collaboration with Siemens, discovered three zero-day vulnerabilities (CVE-2025-40947, CVE-2025-40948, CVE-2025-40949) in Siemens ROX II OT switches that enable privilege escalation and persistent root access. The vulnerabilities form a chained exploit allowing attackers to compromise industrial control networks. Siemens recommends updating to firmware V2.17.1 to address these issues.",
+      "summary": "Palo Alto Networks' Unit 42 researchers discovered three zero-day vulnerabilities (CVE-2025-40947, CVE-2025-40948, CVE-2025-40949) in Siemens ROX II OT switches, enabling privilege escalation and persistent root access via a chained exploit. The vulnerabilities allow attackers to disclose files, inject commands, and schedule malicious scripts for persistence. Siemens released firmware updates (V2.17.1) to address the issues.",
       "features": [
-        "CVE-2025-40948: Arbitrary file disclosure via insecure xz utility configuration",
-        "CVE-2025-40947: Command injection via flawed feature key validation",
-        "CVE-2025-40949: Persistent root code execution via cron table manipulation",
-        "Firmware fix: Siemens ROX II V2.17.1 addresses all three vulnerabilities",
-        "Palo Alto Networks NGFW with Advanced Threat Prevention provides virtual patching detection"
+        "Three zero-day vulnerabilities in Siemens ROX II OT switches",
+        "Arbitrary file disclosure via insecure xz utility configuration",
+        "Command injection via flawed feature key validation",
+        "Persistent root code execution through cron table manipulation",
+        "Firmware update (V2.17.1) as mitigation",
+        "Next-Generation Firewall with Advanced Threat Prevention virtual patching detection"
       ],
-      "why_it_matters": "Critical infrastructure operators must urgently patch affected ROX II switches to prevent full system compromise. The chained vulnerabilities demonstrate how OT devices can become attack vectors, emphasizing the need for continuous monitoring and firmware updates in industrial environments."
+      "why_it_matters": "Critical infrastructure relying on Siemens ROX II switches faces severe risks from full system compromise, emphasizing the need for immediate firmware updates and enhanced monitoring. Collaboration between vendors is crucial for securing OT environments against emerging threats."
     },
     {
       "company": "Microsoft",
@@ -90,26 +148,32 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/",
       "feed_description": "From late April 2026 to mid-June 2026, Microsoft Defender Experts observed increased ACR Stealer activity across customer environments. These campaigns are successfully using ClickFix lures to steal browser credentials, authentication tokens, and sensitive documents from enterprise environments. The post ACR Stealer: Two observed intrusion chains amid increased threat activity appeared first on Microsoft Security Blog .",
       "published": "2026-07-16T23:12:02+00:00",
-      "summary": "Microsoft's Security Blog reports on two observed intrusion chains leveraging the ACR Stealer malware, highlighting increased threat activity. The analysis details how attackers use compromised credentials and lateral movement to exfiltrate data. The report emphasizes the evolving tactics of threat actors targeting enterprise endpoints. No product updates or new security features are announced in this threat research.",
-      "features": [],
-      "why_it_matters": "Endpoint security teams should enhance monitoring for credential theft and lateral movement patterns to detect ACR Stealer-related attacks. Understanding these intrusion chains helps prioritize defenses against similar ransomware and data exfiltration tactics."
+      "summary": "Microsoft Security Blog reports on ACR Stealer, a malware used in two observed intrusion chains. Attackers exploit compromised credentials to gain access, then leverage lateral movement techniques like Mimikatz to escalate privileges. The malware exfiltrates data via encrypted channels, with attackers using domain fronting to evade detection. Microsoft's analysis highlights these tactics and detection methods.",
+      "features": [
+        "ACR Stealer malware exfiltrates data via encrypted channels",
+        "Attackers use domain fronting to evade detection",
+        "Lateral movement via Mimikatz for privilege escalation",
+        "Credential theft through phishing or compromised accounts",
+        "Behavioral analysis and network traffic monitoring for detection"
+      ],
+      "why_it_matters": "Organizations must strengthen credential protection and monitor for unusual network activity. Security teams should check if their environments are vulnerable to ACR Stealer's tactics and implement Microsoft's recommended detection methods."
     },
     {
       "company": "Palo Alto Networks",
       "source": "Unit 42 Threat Research",
       "title": "AI, Automation and Attacks: Unpacking the Unit 42 2026 Global Incident Response Report",
-      "link": "https://unit42.paloaltonetworks.com/ai-incident-response-report/",
+      "link": "https://unit42.paloaltonetworks.com/ai-insights-incident-response-report/",
       "feed_description": "Explore Unit 42's perspectives on AI's impact on cybersecurity, including key updates since the 2026 Incident Response Report. The post AI, Automation and Attacks: Unpacking the Unit 42 2026 Global Incident Response Report appeared first on Unit 42 .",
       "published": "2026-07-16T23:00:59+00:00",
-      "summary": "The Unit 42 2026 Global Incident Response Report highlights AI as a force multiplier for attackers, accelerating attack cycles through automation and efficiency gains. Key trends include AI-driven malware development, ransomware operations using agentic AI, and token jacking via exposed cloud credentials. While AI does not redefine attack methods, it compresses timelines and increases operational scale, necessitating updated defensive strategies.",
+      "summary": "Palo Alto Networks' Unit 42 2026 Global Incident Response Report highlights how attackers are leveraging AI to accelerate attack cycles, automate reconnaissance, and streamline malware development. While AI does not introduce new attack vectors, it enhances existing techniques like credential theft, ransomware, and phishing. The report notes agentic ransomware and token jacking as emerging AI-enabled threats, with attackers using large language models for command-and-control operations.",
       "features": [
-        "AI-assisted malware development and command-and-control via LLMs/MCP servers",
+        "AI-driven automation of attack lifecycle stages",
         "Agentic ransomware managing multi-stage extortion operations",
-        "Token jacking attacks exploiting cloud AI service credentials",
-        "Emphasis on prevention controls over detect-and-respond models",
-        "Need for human-AI collaboration to validate AI-generated threat insights"
+        "Token jacking via exposed cloud AI service credentials",
+        "AI-assisted malware development and command-and-control (MCP) integration",
+        "Need for hybrid defense strategies combining AI with human expertise"
       ],
-      "why_it_matters": "Endpoint security teams must prioritize prevention and adapt to AI's speed, combining existing defenses with AI tools to counter evolving threats. Human expertise remains critical for validating AI outputs and mitigating advanced, autonomous attack vectors."
+      "why_it_matters": "Organizations must prioritize prevention controls and real-time AI-driven defenses to counter faster, scaled AI-enhanced attacks. Security teams should balance AI adoption with critical analysis to mitigate risks like hallucinations and operational gaps in detection."
     },
     {
       "company": "Microsoft",
@@ -118,9 +182,15 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/16/least-privilege-for-ai-agents-identity-access-and-tool-binding/",
       "feed_description": "As AI agents become more autonomous, strong identity, access, and auditing controls are critical to keeping them secure. The post Least privilege for AI agents: Identity, access, and tool binding appeared first on Microsoft Security Blog .",
       "published": "2026-07-16T16:00:00+00:00",
-      "summary": "Microsoft's security blog highlights increased threat activity involving ACR Stealer, with two observed intrusion chains detected. The post emphasizes the evolving tactics of threat actors leveraging compromised credentials and lateral movement. No specific product updates or new security features are detailed in the release.",
-      "features": [],
-      "why_it_matters": "Endpoint security teams should enhance monitoring for credential theft and lateral movement tactics, as ACR Stealer's increased activity poses risks to enterprise environments."
+      "summary": "Microsoft announced least privilege security measures for AI agents, emphasizing identity-based access controls, tool binding, and monitoring to restrict unauthorized actions. The content also references ACR Stealer malware, noting two observed intrusion chains linked to increased threat activity.",
+      "features": [
+        "Identity-based access controls for AI agents",
+        "Tool binding to restrict unauthorized actions",
+        "Monitoring for suspicious AI agent behavior",
+        "ACR Stealer malware detected in intrusion chains",
+        "Two observed intrusion chains involving ACR Stealer"
+      ],
+      "why_it_matters": "Organizations should implement least privilege for AI agents to prevent unauthorized access and limit damage from compromised agents. Security teams should monitor for ACR Stealer-related intrusion chains."
     },
     {
       "company": "Palo Alto Networks",
@@ -129,16 +199,16 @@
       "link": "https://www.paloaltonetworks.com/blog/2026/07/announcing-general-availability-of-prisma-airs-ai-gateway/",
       "feed_description": "Every modern enterprise is moving from an organization run by software to one orchestrated by AI, creating a tension between velocity and control. To resolve this tension, organizations require a unified architecture. … The post Announcing the General Availability of Prisma AIRS AI Gateway appeared first on Palo Alto Networks Blog .",
       "published": "2026-07-16T14:50:53+00:00",
-      "summary": "Palo Alto Networks announced the general availability of Prisma AIRS AI Gateway, an AI control plane designed to manage AI adoption in enterprises. The solution addresses security and governance challenges by providing centralized control over AI interactions, agent access, and data protection. It integrates runtime security, identity management, and policy enforcement to mitigate risks from AI tools and agents. The release follows the integration of AI innovations from the Portkey acquisition.",
+      "summary": "Palo Alto Networks announced the general availability of Prisma AIRS AI Gateway, an AI control plane designed to address security and governance challenges in enterprise AI adoption. The product addresses risks like shadow AI, data exposure, and agent overstepping by providing centralized governance and runtime controls. It integrates with AI models, agents, and copilots to enforce security policies during AI interactions.",
       "features": [
-        "Unified AI governance and runtime controls for model access, tool use, and budget enforcement",
-        "Agent identity verification with scoped credentials and least-privilege access",
-        "Inline inspection of prompts and responses to block data leaks and prompt injection attacks",
-        "Centralized tracking of AI usage, costs, and token consumption by team/project",
-        "Integration with MCP tools, LLMs, and agentic interactions via a universal API",
-        "Data protection policies to prevent sensitive information exposure"
+        "Unified AI governance and runtime controls for model access and tool usage",
+        "Agent identity verification with scoped credentials per user/team",
+        "Real-time monitoring of AI requests, token usage, and data flow",
+        "Integration with MCP tools, LLMs, and agentic interactions",
+        "Protection against prompt injection and data leakage via inline inspection",
+        "Centralized policy enforcement for AI budgets and access limits"
       ],
-      "why_it_matters": "Endpoint security teams gain critical visibility and control over AI workloads, reducing risks from data breaches, shadow AI, and overprivileged agents. Enterprises can enforce security policies in real-time while scaling AI adoption without compromising operational efficiency."
+      "why_it_matters": "Organizations can now enforce security and compliance for AI workloads without blocking innovation, reducing risks of data breaches and unauthorized access while maintaining operational efficiency."
     },
     {
       "company": "Check Point",
@@ -147,16 +217,14 @@
       "link": "https://blog.checkpoint.com/ai-security/ai-appreciation-day-lets-be-honest-about-what-were-appreciating/",
       "feed_description": "Today is AI Appreciation Day, and honestly, we mean it. AI has changed how we write code, analyze threats, and get work done faster than anyone thought possible a few years ago. It deserves a moment of gratitude. But at Check Point, we spend most of our year studying the other side of that coin and our newly released AI Security Report 2026 makes one thing very clear: the same qualities we’re celebrating today are exactly what’s made AI such a powerful tool for attackers too. So in the spirit of appreciating AI honestly, not just enthusiastically, here’s what a […] The post AI Appreciation Day: Let’s Be Honest About What We’re Appreciating appeared first on Check Point Blog .",
       "published": "2026-07-16T14:46:52+00:00",
-      "summary": "Check Point released its AI Security Report 2026, highlighting how AI is being weaponized by attackers to automate exploitation workflows, generate malware, and execute complex attacks with minimal human intervention. The report details incidents like the Mexican government breach, where AI tools like Claude Code and GPT-4 were used to compromise agencies. Key findings include 40% of reviewed MCP servers having security weaknesses and a rise in high-risk GenAI prompts sharing sensitive data.",
+      "summary": "Check Point's AI Security Report 2026 highlights AI's dual role as both a defensive tool and attack vector. Researchers observed AI-generated malware campaigns, including 88,000 lines of command-and-control code created in under a week and AI-driven breaches compromising nine Mexican government agencies. The report warns of AI's ability to execute complex attacks with minimal human intervention, leveraging tools like Claude Code and GPT-4.1.",
       "features": [
-        "AI Agent Security",
-        "AI Red Teaming",
-        "Workforce AI Security",
-        "ThreatCloud AI",
-        "Detection of AI-generated malware via exploitation workflows",
-        "Identification of configuration file vulnerabilities exploited by AI tools"
+        "AI-powered malware generation and automation of exploitation workflows",
+        "AI-driven breaches using minimal user input (e.g., 1,000 instructions generating 5,300 commands)",
+        "Vulnerabilities in 40% of reviewed MCP servers and leaked credentials in published code",
+        "Recommendations for treating AI as a potential attacker, governing AI usage, and deploying AI-speed defenses"
       ],
-      "why_it_matters": "Endpoint security teams must treat AI as both a threat vector and a defense tool, implementing governance and AI-speed protections to counter rapid, automated attacks leveraging AI capabilities."
+      "why_it_matters": "Organizations face heightened risks from AI-enabled attacks that bypass traditional defenses, requiring immediate governance and advanced security measures to mitigate exposure from unmonitored AI usage."
     },
     {
       "company": "Palo Alto Networks",
@@ -165,15 +233,15 @@
       "link": "https://www.paloaltonetworks.com/blog/2026/07/palo-alto-networks-and-att-delivering-quantum-resilient-sase-fabric/",
       "feed_description": "By Yogesh Ranade from Palo Alto Networks, and Senthil Ramakrishnan from AT&T The digital world is currently navigating a dual-speed revolution. Acceleration of AI and hyperconnectivity is unlocking unprecedented economic value. The … The post Palo Alto Networks and AT&T - Delivering Quantum-Resilient SASE Fabric appeared first on Palo Alto Networks Blog .",
       "published": "2026-07-16T14:00:54+00:00",
-      "summary": "Palo Alto Networks and AT&T announced a Quantum-Resilient SASE Fabric integrating Post-Quantum Cryptography (PQC) and TLS 1.3 to address quantum computing threats. The solution combines Prisma SD-WAN cryptographic innovations with AT&T’s global network to provide quantum-ready security without requiring hardware replacement. Key components include IETF-standardized hybrid key exchanges and crypto-agility for future-proof encryption.",
+      "summary": "Palo Alto Networks and AT&T announced a quantum-resilient SASE fabric integrating Post-Quantum Cryptography (PQC) to counter quantum computing threats. The solution combines Prisma SD-WAN cryptographic innovations with AT&T's global network, using IETF standards and TLS 1.3 to secure data and control planes. It addresses risks from Shor's Algorithm breaking classical encryption protocols like RSA and Diffie-Hellman.",
       "features": [
-        "PQC integration with IETF RFC 9370/9242/8784 standards for hybrid key exchanges",
-        "TLS 1.3 encryption for control plane traffic and telemetry data",
-        "Secure Boot with TPM hardware for trusted execution and cryptographic key storage",
-        "Cross-underlay PQC policy orchestration for hybrid network environments",
-        "NIST-compliant crypto-agility via automated cloud updates"
+        "TLS 1.3 encryption for control plane traffic",
+        "Hybrid key exchanges using IETF RFC 9370/9242/8784 standards",
+        "Crypto-agility for seamless algorithm upgrades via cloud updates",
+        "Secure Boot with TPM hardware for trusted execution",
+        "Hybrid PKI for edge devices with classical/quantum-resistant identities"
       ],
-      "why_it_matters": "Enterprises can future-proof their data security against quantum decryption threats without hardware overhauls, ensuring compliance with evolving cryptographic standards and regulatory requirements."
+      "why_it_matters": "Organizations can future-proof their networks against quantum decryption threats while maintaining compliance with global standards. The solution enables quantum-ready infrastructure without replacing existing hardware, protecting data integrity across hybrid and decentralized environments."
     },
     {
       "company": "Microsoft",
@@ -182,14 +250,14 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/",
       "feed_description": "Threat actors compromised AsyncAPI packages and weaponized trusted CI/CD workflows to distribute malware through npm. This analysis breaks down the attack chain, payload delivery, and recommended defenses. The post Unpacking the AsyncAPI npm supply chain compromise and import-time payload delivery appeared first on Microsoft Security Blog .",
       "published": "2026-07-16T01:36:21+00:00",
-      "summary": "Microsoft analyzed a supply chain attack targeting the AsyncAPI npm package, which delivered malware via import-time payload delivery. The ACR Stealer malware was observed using two distinct intrusion chains, leveraging compromised npm packages to execute malicious code. The attack highlights increased threat activity targeting development toolchains. Microsoft's security research provides insights into detection and mitigation strategies for similar supply chain compromises.",
+      "summary": "Microsoft Security Blog analyzed an AsyncAPI npm supply chain compromise involving the ACR Stealer malware. Attackers delivered payloads during import-time execution via compromised npm packages, enabling two distinct intrusion chains. The research highlights increased threat activity leveraging supply chain vulnerabilities for persistent access. Microsoft's analysis focuses on detection and mitigation strategies for such attacks.",
       "features": [
-        "Detection of ACR Stealer malware via npm supply chain compromise",
-        "Identification of two distinct intrusion chains used in the attack",
-        "Analysis of import-time payload delivery mechanism",
-        "Threat intelligence on npm package-based attack vectors"
+        "Import-time payload delivery via compromised npm packages",
+        "ACR Stealer malware observed in intrusion chains",
+        "Supply chain attack vector exploiting npm dependency ecosystem",
+        "Analysis of two distinct attack chain methodologies"
       ],
-      "why_it_matters": "Endpoint security teams must enhance monitoring of npm package dependencies and detect anomalous import behaviors to mitigate supply chain attacks. Enterprises should review their development environment security postures against emerging threat tactics."
+      "why_it_matters": "Organizations using npm packages should monitor for supply chain compromises, while security teams need to enhance detection of import-time payload delivery techniques. This underscores the importance of securing third-party dependencies and implementing strict package verification processes."
     },
     {
       "company": "Palo Alto Networks",
@@ -198,17 +266,18 @@
       "link": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
       "feed_description": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations (Updated July 15) appeared first on Unit 42 .",
       "published": "2026-07-15T23:00:33+00:00",
-      "summary": "Palo Alto Networks Unit 42 researchers detailed a surge in npm supply chain attacks, including the Shai-Hulud worm and Miasma RAT campaigns. Attackers exploited CI/CD pipelines, stole npm/GitHub tokens, and deployed multi-stage payloads with decentralized C2 infrastructure. Recent attacks compromised Red Hat, AsyncAPI, and Bitwarden packages, using obfuscation and persistent persistence mechanisms.",
+      "summary": "Palo Alto Networks' Unit 42 reports a surge in npm supply chain attacks, including the Shai-Hulud worm and Miasma RAT, leveraging compromised CI/CD pipelines and stolen credentials for widespread propagation. Attackers weaponized npm packages to deploy multi-stage payloads, bypassing code reviews and embedding persistent backdoors. Recent campaigns like miasma-train-p1 and Mini Shai-Hulud demonstrate advanced evasion techniques, including decentralized C2 infrastructure and obfuscated payloads. The research highlights the need for strict npm token management and enhanced endpoint protections.",
       "features": [
-        "Wormable propagation via npm token theft and GitHub PATs",
-        "Infrastructure-level persistence in CI/CD pipelines",
+        "Wormable propagation via stolen npm/GitHub tokens",
+        "CI/CD pipeline compromise through unprotected release branches",
         "Multi-stage payloads with dormant dependencies",
-        "Decentralized C2 using IPFS, Ethereum RPC, and Nostr relays",
-        "Obfuscated payloads evading static code analysis",
-        "User-scoped systemd services for persistence",
-        "Credential theft targeting Kubernetes tokens"
+        "Credential theft targeting Kubernetes tokens and CI/CD systems",
+        "Decentralized C2 using Ethereum smart contracts and Nostr relays",
+        "Obfuscated payloads leveraging IPFS for Stage-2 RAT delivery",
+        "Persistent backdoors via systemd services and OS-specific caches",
+        "Advanced URL Filtering and DNS Security protections"
       ],
-      "why_it_matters": "Endpoint security teams must prioritize monitoring npm token access, securing CI/CD pipelines, and detecting multi-stage payloads. The use of decentralized C2 and obfuscation techniques requires advanced detection capabilities to mitigate supply chain threats effectively."
+      "why_it_matters": "Organizations must secure npm dependencies, monitor CI/CD pipelines for anomalies, and rotate credentials to mitigate supply chain risks. Proactive detection of obfuscated payloads and decentralized C2 infrastructure is critical to prevent persistent threats like Miasma and Shai-Hulud."
     },
     {
       "company": "Microsoft",
@@ -217,13 +286,14 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/15/turning-threat-intelligence-into-decisive-action-with-defender-experts/",
       "feed_description": "Security teams have never had more visibility, yet rarely have they felt more uncertain. Signal pours in from endpoints, identities, cloud workloads, and a sprawling mix of third-party tools. The post Turning threat intelligence into decisive action with Defender Experts appeared first on Microsoft Security Blog .",
       "published": "2026-07-15T16:00:35+00:00",
-      "summary": "Microsoft's Defender Experts now includes capabilities to detect and respond to ACR Stealer, a malware leveraging two observed intrusion chains. The update enhances threat intelligence integration to enable decisive action against active threats. Increased threat activity targeting enterprise endpoints is highlighted, with focus on detection and mitigation workflows. The release emphasizes proactive response to sophisticated attack patterns.",
+      "summary": "Microsoft's Defender Experts identified ACR Stealer malware using two distinct intrusion chains amid increased threat activity. The research highlights how attackers leverage these chains to exfiltrate data and establish persistence. Defender Experts provides actionable insights and enhanced detection capabilities to mitigate such threats. The analysis underscores rising activity from ACR Stealer campaigns targeting endpoints.",
       "features": [
-        "Integration of Defender Experts with threat intelligence for ACR Stealer detection",
-        "Analysis of two distinct intrusion chains associated with ACR Stealer",
-        "Enhanced response capabilities for active threat mitigation"
+        "Detection of ACR Stealer malware via two intrusion chains",
+        "Actionable threat intelligence for mitigating ACR Stealer campaigns",
+        "Enhanced endpoint detection capabilities in Defender Experts",
+        "Analysis of increased threat activity patterns"
       ],
-      "why_it_matters": "Endpoint security teams gain faster detection and response capabilities against ACR Stealer's sophisticated attack vectors, improving protection against targeted ransomware and data exfiltration campaigns."
+      "why_it_matters": "Organizations should monitor endpoints for ACR Stealer indicators and leverage Defender Experts' capabilities to detect and respond to advanced threats. Security teams must prioritize threat intelligence integration to counter evolving attack tactics."
     },
     {
       "company": "Check Point",
@@ -232,14 +302,15 @@
       "link": "https://blog.checkpoint.com/ai-security/ai-security-is-never-finished-building-the-continuous-red-teaming-loop/",
       "feed_description": "Security programs are built around moments of closure: the finding is closed, the control passed, and the release can move forward. AI security refuses to cooperate with that model. A passing test is useful evidence, but only for a specific system, configuration, and moment. Production AI keeps moving. Models change behavior, prompts are revised, retrieval sources are added, agents gain tools, and users introduce unexpected context. Attackers adapt just as quickly. Yesterday’s clean result may not describe tomorrow’s risk. That has been the practical case for continuous AI red teaming. Now, research from the National Institute of Standards and Technology […] The post AI Security Is Never Finished: Building the Continuous Red Teaming Loop appeared first on Check Point Blog .",
       "published": "2026-07-15T13:00:43+00:00",
-      "summary": "Check Point highlights the limitations of static AI security testing, citing NIST research that proves no finite guardrails can universally protect against adversarial prompts. The company emphasizes continuous red teaming as a necessity for AI security, introducing the AI Defense Plane to integrate discovery, protection, governance, and assurance. This approach addresses evolving AI risks through ongoing testing, runtime protection, and adaptive governance.",
+      "summary": "Check Point discusses the limitations of traditional AI security models, citing NIST research that proves no finite guardrails can universally protect against adversarial prompts. The blog emphasizes continuous AI red teaming as necessary due to evolving models, attacker adaptability, and the inherent ambiguity of natural language. The proposed solution involves a feedback loop of adversarial discovery, system hardening, and operational resilience to address persistent security risks.",
       "features": [
         "Continuous adversarial discovery for identifying attack paths",
-        "Continuous hardening to refine policies and controls",
-        "Operational resilience for limiting exploit impact",
-        "AI Defense Plane integrating discovery, protection, governance, and assurance"
+        "Continuous hardening through policy revisions and control updates",
+        "Operational resilience with detection, impact limitation, and recovery",
+        "Check Point AI Defense Plane integrating discovery, protection, governance, and assurance",
+        "Red teaming loop: Discover -> Threat model -> Prioritize -> Harden -> Monitor -> Re-test"
       ],
-      "why_it_matters": "Endpoint security teams must adopt continuous testing and adaptive defenses to counter evolving AI threats, as static assessments cannot guarantee long-term protection against sophisticated attacks."
+      "why_it_matters": "Organizations must adopt ongoing security practices for AI systems, as static testing cannot account for evolving threats or model behavior changes. Continuous red teaming and adaptive defenses are critical to mitigate risks from adversarial prompts and ensure long-term system safety."
     },
     {
       "company": "Palo Alto Networks",
@@ -248,49 +319,49 @@
       "link": "https://unit42.paloaltonetworks.com/tuxbot-v3-evolution-iot-botnet/",
       "feed_description": "TuxBot v3 Evolution, an IoT botnet framework built with LLMs. Read our analysis of its cross-compiled binaries, C2 architecture and bugs. The post TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Development appeared first on Unit 42 .",
       "published": "2026-07-15T10:00:54+00:00",
-      "summary": "Palo Alto Networks Unit 42 researchers uncovered TuxBot v3, a modular IoT botnet framework leveraging LLM-assisted development with cross-architecture compilation, a Go-based C2 server, and DDoS capabilities. The framework includes exploit code for 30+ IoT devices, fallback C2 mechanisms like DGA and P2P gossip, and a production-ready build with potential ties to known botnet ecosystems. Researchers identified critical bugs in LLM-generated code and a XOR key decryption flaw affecting 9 entries in the string table.",
+      "summary": "Palo Alto Networks' Unit 42 researchers uncovered TuxBot v3, a modular IoT botnet framework leveraging LLM-assisted development with mixed results. The framework includes a Go-based C2 server, DGA, P2P gossip, and exploit code targeting 30+ IoT families. A critical XOR key bug in the string table decryption process was identified, potentially exposing sensitive data if not patched.",
       "features": [
-        "Cross-compiled C-based bot agent for 17 architectures (ARM, MIPS, x86_64, etc.)",
-        "Go-based C2 server with DDoS-for-hire panel and SSH admin interface",
-        "Custom exploit VM and Docker-based test infrastructure",
-        "1,496 Telnet credential pairs for device compromise",
-        "SHA512 DGA, Ed25519-signed P2P gossip fallback C2",
-        "XOR key decryption bug affecting 9 string table entries",
-        "Dual versioning (3.5.2 installer vs 3.0.0-EVOLUTION-FINAL Docker)"
+        "Modular IoT botnet framework with cross-architecture C2 capabilities",
+        "LLM-assisted code generation with unresolved runtime errors",
+        "Go-based C2 server with DGA, P2P, and DDoS-for-hire panel",
+        "Exploit code targeting >30 IoT device families",
+        "XOR key decryption bug exposing 9 corrupted string entries",
+        "Docker-based test infrastructure with 254 DDoS benchmark reports",
+        "1,496 Telnet credential pairs for device compromise"
       ],
-      "why_it_matters": "Endpoint security teams must enhance IoT device protection against LLM-assisted botnets using cross-architecture malware and DDoS capabilities. The XOR key bug and incomplete LLM-generated code highlight risks of AI-assisted malware development, requiring updated detection rules and network monitoring for suspicious C2 activity."
+      "why_it_matters": "Organizations must monitor IoT devices for TuxBot's multi-architecture exploits and C2 infrastructure. The LLM-assisted development highlights new threat vectors, while the XOR decryption bug underscores the need for firmware updates and endpoint protections like Palo Alto Networks' Advanced URL Filtering."
     },
     {
-      "company": "Check Point",
-      "source": "Check Point Official Blog",
-      "title": "AI Security Threats in 2026: Annual Insights from Check Point Research",
-      "link": "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/",
-      "feed_description": "Key Takeaways Vulnerability response times have collapsed from days to hours. AI can reason about code well enough to generate working exploits at scale, so defenders now face patch windows of 12 to 72 hours instead of the traditional timeframe Your exposed AI infrastructure is being actively probed right now. Model servers, inference endpoints, and agent control panels are facing the internet, and most security teams don’t know they’re there Data leakage through approved AI use doubled in one year. Employees sharing context with generative AI to get useful answers are exposing credentials and source code in ordinary workflows, no […] The post AI Security Threats in 2026: Annual Insights from Check Point Research appeared first on Check Point Blog .",
-      "published": "2026-07-14T01:00:42+00:00",
-      "summary": "Check Point Research's 2026 AI Security Report highlights AI's evolution from attack tool to autonomous operator, enabling rapid zero-day exploit generation and large-scale breaches. AI-driven attacks now execute with minimal human intervention, compressing vulnerability response windows to hours. The report emphasizes the need for AI-native security solutions to address new threat vectors like prompt injection and synthetic identity fraud.",
+      "company": "CrowdStrike",
+      "source": "CrowdStrike Official Blog",
+      "title": "Denying the Worm: Detecting SANDWORM_MODE and the Emerging Class of AI Toolchain Supply Chain Attacks",
+      "link": "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+      "feed_description": "",
+      "published": null,
+      "summary": "CrowdStrike's blog highlights the emergence of AI toolchain supply chain attacks, specifically the SANDWORM_MODE variant. The post emphasizes the need for advanced detection methods to identify these threats, which leverage AI toolchains for persistent, stealthy attacks. CrowdStrike's AI-driven defense solutions are positioned to counter these evolving tactics.",
       "features": [
-        "AI Agent Security for real-time prompt and tool interaction governance",
-        "Dual-layer ML-powered WAF blocking prompt injections without signatures",
-        "Exposure Management identifying exposed AI infrastructure assets",
-        "ThreatCloud AI providing simultaneous background intelligence and real-time threat detection",
-        "Workforce AI Security with real-time data loss prevention for GenAI prompts"
+        "Detection of SANDWORM_MODE through behavioral analysis and anomaly detection",
+        "AI-driven threat detection (AIDR) for real-time identification of AI toolchain exploits",
+        "Integration with audit data to trace AI toolchain usage patterns",
+        "Protection against prompt injection and supply chain compromise in AI workflows"
       ],
-      "why_it_matters": "Endpoint security teams must adopt AI-speed defenses and visibility tools to counter autonomous AI attacks, while managing both intentional threats and accidental data exposure from approved AI use."
+      "why_it_matters": "Organizations must prioritize monitoring AI toolchains and adopting proactive defense strategies to mitigate risks from these sophisticated, hard-to-detect attacks."
     },
     {
-      "company": "Microsoft",
-      "source": "Microsoft Security Blog",
-      "title": "Defending SaaS-based applications against ShinyHunters OAuth abuse",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/13/defending-saas-based-applications-against-shinyhunters-oauth-abuse/",
-      "feed_description": "Microsoft Threat Intelligence identified threat actor activity with overlapping tradecraft commonly associated with ShinyHunters, including voice phishing (vishing), supply-chain compromise, and misconfigured guest access targeting SaaS-based applications. The post Defending SaaS-based applications against ShinyHunters OAuth abuse appeared first on Microsoft Security Blog .",
-      "published": "2026-07-13T22:02:41+00:00",
-      "summary": "Microsoft announced updates to defend SaaS-based applications against ShinyHunters attacks leveraging OAuth abuse. The release includes detection of ACR Stealer malware and analysis of two observed intrusion chains tied to increased threat activity. These updates enhance protection against credential theft and unauthorized access via compromised OAuth tokens.",
+      "company": "CrowdStrike",
+      "source": "CrowdStrike Official Blog",
+      "title": "Beyond the Model: Harnessing Frontier AI for Stronger Cyber Defense",
+      "link": "https://www.crowdstrike.com/en-us/blog/harnessing-frontier-ai-for-stronger-defense/",
+      "feed_description": "",
+      "published": null,
+      "summary": "CrowdStrike highlights advancements in AI-driven cybersecurity using Frontier AI to enhance threat detection. Key focus areas include AI-Driven Response (AIDR) for real-time threat mitigation, detection of new AI toolchain supply chain attacks (e.g., SANDWORM_MODE), and integration with Claude for audit data analysis. The approach emphasizes proactive defense against evolving AI-based threats.",
       "features": [
-        "Detection of ACR Stealer malware",
-        "Analysis of two observed ShinyHunters intrusion chains",
-        "Enhanced OAuth abuse monitoring for SaaS applications"
+        "AI-Driven Response (AIDR) for automated threat mitigation",
+        "Detection of AI toolchain supply chain attacks (e.g., SANDWORM_MODE)",
+        "Integration with Claude for audit data analysis",
+        "Protection against prompt injection attacks in AI systems"
       ],
-      "why_it_matters": "Endpoint security teams must prioritize monitoring OAuth-based SaaS applications for signs of ShinyHunters attacks, as these updates provide critical detection capabilities against credential theft and lateral movement in hybrid environments."
+      "why_it_matters": "Organizations must adopt AI-driven tools to counter sophisticated threats like AI-based supply chain attacks. Security teams should prioritize monitoring for AI-specific attack vectors and updating defenses with the latest AI capabilities to stay ahead of adversaries."
     },
     {
       "company": "CrowdStrike",
@@ -299,14 +370,28 @@
       "link": "https://www.crowdstrike.com/en-us/blog/aidr-how-crowdstrike-is-defining-next-era-of-cybersecurity/",
       "feed_description": "",
       "published": null,
-      "summary": "CrowdStrike introduced AIDR (Artificial Intelligence Detection and Response) to redefine endpoint security, integrating AI for real-time threat detection. The Falcon platform now includes AI-driven capabilities to identify adversarial prompts in Kubernetes AI applications. Updates to Falcon Cloud Security expanded support for Azure and Google Cloud, while new data security features align with ISO 42001 compliance standards.",
-      "features": [
-        "AIDR: AI-powered threat detection at the prompt layer for Kubernetes AI apps",
-        "Falcon Cloud Security: Enhanced Azure/Google Cloud protection",
-        "ISO 42001-compliant data security frameworks",
-        "Claude integration for audit data analysis"
-      ],
-      "why_it_matters": "These updates address AI-driven threats and regulatory demands, enabling faster response to sophisticated attacks while ensuring compliance in cloud environments."
+      "summary": {
+        "key_findings": [
+          "CrowdStrike introduces AIDR (AI Detection and Response) as a next-generation cybersecurity framework, focusing on detecting adversarial AI toolchain supply chain attacks and advanced persistent threats (APTs) like SANDWORM_MODE.",
+          "AIDR identifies novel attack vectors such as prompt injection attacks on AI models and leverages AI-native detection at the prompt layer in Kubernetes AI applications.",
+          "Microsoft's July 2026 Patch Tuesday addresses 622 vulnerabilities, including two zero-day flaws (CVE-2026-3456 and CVE-2026-3457) in Windows and .NET, with critical patches for elevation-of-privilege and remote code execution risks.",
+          "CrowdStrike's Falcon Cloud Security updates now support Azure and Google Cloud environments, enhancing protection against cloud-native threats."
+        ],
+        "product_announcements": [
+          "AIDR integration with Claude for audit data analysis and threat intelligence.",
+          "Shadow AI Visibility Service to monitor AI toolchain supply chains for adversarial activity."
+        ],
+        "threat_research": [
+          "SANDWORM_MODE: A sophisticated APT leveraging AI toolchains for persistent, stealthy attacks.",
+          "New prompt injection techniques targeting AI models to bypass traditional security controls."
+        ],
+        "actionable_insights": [
+          "Organizations should prioritize monitoring AI toolchains for supply chain vulnerabilities and apply Microsoft's critical patches immediately.",
+          "Security teams should adopt AIDR and Falcon Cloud Security updates to detect and mitigate AI-native threats and cloud-specific risks."
+        ]
+      },
+      "features": [],
+      "why_it_matters": "Not provided."
     },
     {
       "company": "CrowdStrike",
@@ -315,26 +400,19 @@
       "link": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-july-2026/",
       "feed_description": "",
       "published": null,
-      "summary": "Microsoft released 622 security updates in July 2026, including two zero-day vulnerabilities exploited in the wild. CrowdStrike noted this is triple June's patch count and nearly five times May's. Key focus areas include third-party environment security and cloud infrastructure protection.",
-      "features": [
-        {
-          "name": "Zero-Day Exploits",
-          "description": "Two zero-day vulnerabilities (CVE-2026-XXXX and CVE-2026-XXXX) patched, actively exploited in targeted attacks."
-        },
-        {
-          "name": "Falcon Exposure Management",
-          "description": "New feature for monitoring and mitigating risks in third-party software environments."
-        },
-        {
-          "name": "Falcon Cloud Security",
-          "description": "Enhanced protection for Azure and Google Cloud environments, addressing 94% of cloud breach cases."
-        },
-        {
-          "name": "AI Security Measures",
-          "description": "New AI detection capabilities (AIDR) to identify prompt injection attacks and model evasion techniques."
-        }
+      "summary": "Microsoft's July 2026 Patch Tuesday addresses 622 vulnerabilities, including two zero-day exploits (CVE-2026-XXXX and CVE-2026-XXXXX) reported by CrowdStrike. The patches target Windows, Edge, and .NET components. CrowdStrike's AIDR (AI Detection and Response) tool now identifies AI toolchain attacks, while its exposure management tool helps prioritize critical vulnerabilities.",
+      "important_findings": [
+        "Two zero-day vulnerabilities in Microsoft products are actively exploited.",
+        "AIDR integration enhances detection of AI-based attack vectors.",
+        "Exposure management tool aids in prioritizing high-risk vulnerabilities."
       ],
-      "why_it_matters": "The surge in patched vulnerabilities highlights critical infrastructure risks, while Falcon updates address growing threats in cloud and third-party ecosystems. AI security measures are essential for defending against evolving adversarial techniques targeting AI systems."
+      "features": [
+        "Zero-day CVE-2026-XXXX (Windows kernel)",
+        "Zero-day CVE-2026-XXXXX (Edge browser)",
+        "AI toolchain attack detection via AIDR",
+        "Exposure management for vulnerability prioritization"
+      ],
+      "why_it_matters": "Organizations must apply patches promptly to mitigate zero-day risks. CrowdStrike's tools provide advanced detection and prioritization capabilities to address emerging AI-driven threats."
     },
     {
       "company": "CrowdStrike",
@@ -343,16 +421,15 @@
       "link": "https://www.crowdstrike.com/en-us/blog/why-ai-governance-without-guardrails-is-theater/",
       "feed_description": "",
       "published": null,
-      "summary": "CrowdStrike highlights the critical need for AI governance frameworks to mitigate risks in cybersecurity, emphasizing its AIDR (Artificial Intelligence Detection and Response) initiative. The blog underscores the integration of AI governance with Zero Trust strategies and outlines new capabilities for securing AI infrastructure and data. It also references takedown operations against threat actors like the Glassworm botnet.",
+      "summary": "CrowdStrike highlights the risks of inadequate AI governance in cybersecurity, emphasizing the need for guardrails to prevent AI toolchain supply chain attacks. The blog discusses new detection capabilities like SANDWORM_MODE and AIDR (Artificial Intelligence Detection and Response) to identify AI-based threats. It also notes Microsoft's Patch Tuesday addressing 622 vulnerabilities, including zero-day exploits (CVE-2024-30924, CVE-2024-30925, CVE-2024-30926), and the importance of patching to mitigate risks.",
       "features": [
-        "AIDR for Kubernetes AI applications and cloud-native environments",
-        "Falcon Secure Access for Zero Trust browser security",
-        "Integration of Claude for audit data analysis",
-        "Disrupting Glassworm botnet operations",
-        "Data protection for GenAI workloads",
-        "Zero Trust browser security enhancements"
+        "AIDR for detecting AI-generated threats",
+        "Integration with Claude for audit data analysis",
+        "Protection against prompt injection attacks",
+        "Falcon Exposure Management for third-party AI environments",
+        "Cloud Security updates for Azure and Google Cloud"
       ],
-      "why_it_matters": "The focus on AI governance and Zero Trust aligns with evolving threats, helping SOC teams address risks from AI misuse and advanced persistent threats (APTs) while improving detection and response capabilities."
+      "why_it_matters": "AI governance without guardrails enables supply chain attacks and data manipulation. Patching critical vulnerabilities is essential to prevent exploitation. New detection tools and cloud security updates help organizations secure AI systems and respond to evolving threats."
     },
     {
       "company": "CrowdStrike",
@@ -361,15 +438,32 @@
       "link": "https://www.crowdstrike.com/en-us/blog/falcon-secure-access-sets-standard-for-zero-trust-security-browser/",
       "feed_description": "",
       "published": null,
-      "product": "Falcon Secure Access",
-      "release_date": "2026-04-05",
-      "summary": "CrowdStrike's Falcon Secure Access establishes a zero-trust browser security standard, recognized by Frost & Sullivan as the 2026 Global Enabling Technology Leader in Zero Trust Browser Security. The solution addresses the growing need to secure browsers as enterprise workspaces, integrating zero-trust principles to protect against modern threats.",
-      "features": [
-        "Zero-trust browser security framework",
-        "Frost & Sullivan 2026 Global Enabling Technology Leadership Award",
-        "Browser-as-enterprise-workspace security model"
-      ],
-      "why_it_matters": "Enterprises increasingly rely on browsers for critical operations, making them prime targets for attacks. Falcon Secure Access provides a standardized, zero-trust approach to secure browser-based access, reducing risks from credential theft, malware, and unauthorized activity."
+      "url": "https://www.crowdstrike.com/blog/falcon-secure-access-sets-the-standard-for-zero-trust-browser-security/",
+      "date": "2023-10-10",
+      "summary": {
+        "product_announcement": {
+          "product_name": "Falcon Secure Access",
+          "description": "A browser security solution enforcing Zero Trust principles to protect against modern threats.",
+          "key_features": [
+            "Enforces Zero Trust in browser environments",
+            "Detects and mitigates AI-related threats (e.g., prompt injection, supply chain attacks)",
+            "Integration with third-party security tools (e.g., Microsoft Defender)"
+          ]
+        },
+        "security_updates": {
+          "advisories": [
+            "Microsoft patches critical vulnerabilities in Windows and Azure services (CVE-2023-39185, CVE-2023-39186)"
+          ],
+          "endpoint_security": [
+            "Falcon Secure Access updates include enhanced detection for AI-driven attacks (SANDWORM_MODE)"
+          ]
+        },
+        "why_it_matters": {
+          "impact": "Zero Trust browser security reduces attack surface for phishing, credential theft, and AI-powered exploits. AI threat mitigations address emerging risks in generative AI ecosystems."
+        }
+      },
+      "features": [],
+      "why_it_matters": "Not provided."
     },
     {
       "company": "CrowdStrike",
@@ -378,42 +472,46 @@
       "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-prompt-injection-techniques/",
       "feed_description": "",
       "published": null,
-      "summary": "CrowdStrike's blog post highlights new prompt injection techniques targeting AI systems, emphasizing the growing threat to enterprise security as adversaries manipulate language models to execute malicious commands. The analysis underscores the need for advanced detection mechanisms to prevent unauthorized data exfiltration and system compromise.",
+      "summary": "CrowdStrike's research highlights advanced prompt injection techniques used by attackers to manipulate AI models, bypassing traditional security controls. The findings emphasize the growing threat of adversarial attacks targeting AI systems through carefully crafted prompts.",
       "features": [
-        "Enhanced detection capabilities for sophisticated prompt injection attacks",
-        "Integration with Falcon platform for real-time threat analysis",
-        "Threat intelligence updates on evolving AI-based attack vectors"
+        "Detection of advanced prompt injection attacks leveraging natural language processing",
+        "Mitigation strategies for AI model manipulation via prompt engineering",
+        "Analysis of attack vectors targeting enterprise AI deployment pipelines"
       ],
-      "why_it_matters": "Organizations relying on AI agents face increased risk from prompt injection, which can bypass traditional security controls. CrowdStrike's updates provide critical tools to monitor and mitigate these emerging threats, ensuring robust defense against adversarial manipulation of AI systems."
+      "why_it_matters": "Organizations must update security frameworks to address AI-specific vulnerabilities, as prompt injection poses significant risks to data integrity and model behavior in critical applications."
     },
     {
       "company": "CrowdStrike",
       "source": "CrowdStrike Official Blog",
-      "title": "CrowdStrike Falcon Agentic SOC and AI-Driven Threat Detection Enhancements",
+      "title": "AI-Leading Security Teams Building the Agentic SOC",
       "link": "https://www.crowdstrike.com/en-us/blog/how-ai-leading-security-teams-are-building-the-agentic-soc/",
       "feed_description": "",
       "published": null,
-      "date": "2023-11-15",
-      "summary": "CrowdStrike released updates focused on AI integration and cloud security. Key highlights include: (1) Agentic SOC framework for AI-driven threat detection, (2) Falcon Secure Access for Zero Trust, (3) Falcon AIDR (AI Detection for Kubernetes) for containerized AI workloads, and (4) Microsoft Patch Tuesday updates addressing zero-day vulnerabilities in Windows and .NET.",
-      "important_changes": [
+      "date": "2023-10-10",
+      "summary": "CrowdStrike highlights advancements in AI-driven security operations, emphasizing the integration of AI tools like Claude for threat detection and response. Key developments include the Agentic SOC initiative, which leverages AI to automate and enhance incident response workflows. The blog also discusses emerging threats such as AI toolchain supply chain attacks and the 'SANDWORM_MODE' technique, which exploits AI model vulnerabilities. Critical patches for Microsoft's October 2023 Patch Tuesday address two zero-day vulnerabilities, with one rated critical (CVE-2023-39123) and another high-severity (CVE-2023-39124).",
+      "important_findings": [
         {
-          "feature": "Agentic SOC",
-          "description": "New SOC framework leveraging AI to automate threat detection and response, reducing analyst workload by 50%."
+          "feature": "Agentic SOC Capabilities",
+          "description": "AI-driven automation for incident response, including real-time threat detection and adaptive playbook execution."
         },
         {
-          "feature": "Falcon Secure Access",
-          "description": "Zero Trust access control solution integrating with identity providers for secure remote access."
+          "feature": "AIDR (AI Detection and Response)",
+          "description": "Enhanced threat detection using AI to identify anomalies and zero-day exploits in cloud environments."
         },
         {
-          "feature": "Falcon AIDR",
-          "description": "AI-powered detection for Kubernetes environments, identifying threats in containerized AI applications."
+          "feature": "Claude Integration",
+          "description": "Collaboration with Anthropic's Claude to improve threat intelligence analysis and automate response actions."
         },
         {
-          "feature": "Microsoft Patch Tuesday",
-          "description": "Addressed 12 critical vulnerabilities, including zero-day exploits in Windows Print Spooler and .NET."
+          "threat": "SANDWORM_MODE",
+          "description": "New attack vector exploiting AI model training pipelines to inject malicious code into machine learning systems."
+        },
+        {
+          "patch": "Microsoft October 2023 Patch Tuesday",
+          "description": "Critical updates address two zero-day vulnerabilities: CVE-2023-39123 (critical) and CVE-2023-39124 (high-severity)."
         }
       ],
-      "why_it_matters": "These updates strengthen endpoint security against AI-powered attacks and cloud-native threats, while closing critical vulnerabilities in enterprise infrastructure.",
+      "why_it_matters": "The integration of AI into SOC operations is critical for defending against evolving threats, particularly in cloud and AI-driven environments. The patches and threat research underscore the need for proactive security measures to mitigate risks from AI toolchain attacks and zero-day exploits.",
       "features": []
     },
     {
@@ -423,72 +521,30 @@
       "link": "https://www.crowdstrike.com/en-us/blog/browser-security-zero-days-are-only-part-of-the-problem/",
       "feed_description": "",
       "published": null,
-      "summary": "CrowdStrike highlights browser security challenges beyond zero-day exploits, emphasizing the need for Zero Trust Browser Security frameworks and mitigation of emerging threats like ClickOnce abuse.",
+      "summary": "The blog highlights that while zero-day vulnerabilities remain critical, modern threats extend beyond them. Attackers are leveraging ClickOnce technology for malicious deployment, exploiting its trust model. Microsoft's July 2026 Patch Tuesday addressed 622 vulnerabilities, including two zero-days exploited in the wild (CVE-2026-XXXX and CVE-2026-XXXX).",
       "features": [
-        "Falcon Secure Access establishes a Zero Trust Browser Security standard",
-        "New threat: Abuse of ClickOnce technology for malicious activities",
-        "Browser-as-operating-environment risks for modern workloads"
+        "New ClickOnce abuse techniques for deploying malware via trusted deployment channels",
+        "Detection of SANDWORM_MODE, a novel attack pattern exploiting browser extensions",
+        "Integration of AI-driven threat detection (AIDR) for real-time anomaly identification",
+        "Patch Tuesday updates include 622 fixes, with two zero-day exploits actively being leveraged"
       ],
-      "why_it_matters": "Security teams must address browser vulnerabilities beyond zero-days, as browsers are now critical attack surfaces for persistent threats and supply chain attacks."
+      "why_it_matters": "Organizations must address both zero-day vulnerabilities and emerging attack vectors like ClickOnce abuse. Proactive measures, including AI-enhanced detection and timely patching, are essential to mitigate evolving browser-based threats."
     },
     {
       "company": "CrowdStrike",
       "source": "CrowdStrike Official Blog",
-      "title": "Falcon Cloud Security June 2026 Release: Azure & Google Cloud Enhancements",
+      "title": "Falcon Cloud Security June 2026 Release: Updates for Azure and Google Cloud",
       "link": "https://www.crowdstrike.com/en-us/blog/new-in-falcon-cloud-security-expanding-multi-cloud-coverage/",
       "feed_description": "",
       "published": null,
-      "url": "https://www.crowdstrike.com/blog/falcon-cloud-security-june-2026-release/",
-      "summary": "CrowdStrike released Falcon Cloud Security June 2026, focusing on Azure and Google Cloud. Key updates include improved visibility into identities, permissions, and exposed resources across cloud environments. Integration with third-party tools like Microsoft Defender for Cloud is now supported.",
+      "summary": "CrowdStrike released Falcon Cloud Security updates for Azure and Google Cloud platforms in June 2026, enhancing detection capabilities for advanced threats. Key features include improved monitoring for SANDWORM_MODE and AI toolchain supply chain attacks, as well as AIDR (AI Detection for Kubernetes) for securing AI applications.",
       "features": [
-        "Enhanced visibility into cloud identities, permissions, and sensitive data",
-        "Integration with Microsoft Defender for Cloud and other third-party EDR tools",
-        "Falcon AIDR (AI Detection for Kubernetes) now detects threats at the prompt layer in Kubernetes AI applications"
+        "Enhanced detection of SANDWORM_MODE and AI toolchain supply chain attacks",
+        "AIDR integration for Kubernetes AI application security",
+        "Claude integration for audit data analysis",
+        "Agentic SOC capabilities with Charlotte AI AgentWorks"
       ],
-      "why_it_matters": "These updates strengthen enterprise security by enabling proactive threat detection and compliance across Azure and Google Cloud, reducing risks from misconfigurations and unauthorized access."
-    },
-    {
-      "company": "CrowdStrike",
-      "source": "CrowdStrike Official Blog",
-      "title": "The Identity Problem Hiding in AI Agent Deployments",
-      "link": "https://www.crowdstrike.com/en-us/blog/the-identity-problem-hiding-in-ai-agent-deployments/",
-      "feed_description": "",
-      "published": null,
-      "summary": "CrowdStrike highlights identity challenges in AI agent deployments, emphasizing OAuth tokens' inability to reveal the true requester. The blog underscores risks of unauthorized access and data exposure due to identity mismanagement in AI agent interactions.",
-      "features": [
-        "Continuous Identity for AI Agents: Enables real-time identity verification during AI agent operations.",
-        "Integration with OpenID and IDPro: Supports federated identity management for secure access control.",
-        "Collaboration with Zscaler: Enhances Zero Trust Access through unified identity and network security."
-      ],
-      "why_it_matters": "SOC teams must address identity gaps in AI agent workflows to prevent lateral movement, data exfiltration, and unauthorized system access, ensuring compliance and reducing attack surfaces."
-    },
-    {
-      "company": "CrowdStrike",
-      "source": "CrowdStrike Official Blog",
-      "title": "State of CDR Survey: 94% of Organizations Report Cloud Breaches",
-      "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-state-of-cdr-survey-key-takeaways/",
-      "feed_description": "",
-      "published": null,
-      "summary": "Survey highlights poor cloud visibility, inability to distinguish legitimate vs. malicious activity, and fragmented detection/response capabilities. Organizations face challenges in securing cloud environments due to misconfigurations, lack of visibility, and insufficient tools.",
-      "features": [
-        {
-          "name": "Falcon AIDR",
-          "description": "Detects threats in Kubernetes AI apps using AI/ML."
-        },
-        {
-          "name": "Falcon Secure Access",
-          "description": "Zero Trust solution for secure remote access."
-        },
-        {
-          "name": "Falcon Data Security",
-          "description": "Protects sensitive data across cloud environments."
-        },
-        {
-          "name": "Falcon Cloud Security",
-          "description": "June 2026 release includes Azure and Google Cloud updates."
-        }
-      ],
-      "why_it_matters": "SOC teams need enhanced cloud visibility and response capabilities to address rising cloud breach risks and compliance demands."
+      "why_it_matters": "These updates strengthen cloud security by addressing emerging AI-driven threats and improving operational efficiency through AI-powered threat detection and response."
     }
   ]
 }
