@@ -1,325 +1,342 @@
 {
-  "generated_at": "2026-07-20T18:20:31.340304+00:00",
+  "generated_at": "2026-07-27T10:43:23.727232+00:00",
   "period_days": 7,
-  "item_count": 23,
+  "item_count": 25,
   "source_count": 8,
   "items": [
     {
-      "company": "Apache Airflow",
-      "source": "Apache Airflow GitHub Releases",
-      "title": "constraints-3.3.0",
-      "link": "https://github.com/apache/airflow/releases/tag/constraints-3.3.0",
-      "feed_description": "Fix downgraded databricks provider on py3.11/py3.12 in 3.3.0 constraints",
-      "published": "2026-07-18T22:45:03+00:00",
-      "summary": "The Apache Airflow constraints-3.3.0 release encountered loading errors during access, preventing retrieval of detailed release notes. The tag was verified with a committer's signed signature but no substantive content or changes were available in the provided material.",
+      "company": "Prefect",
+      "source": "Prefect GitHub Releases",
+      "title": "3.8.1.dev2: Nightly Development Release",
+      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.8.1.dev2",
+      "feed_description": "What's Changed Development & Tidiness 🧹 chore(deps): bump pymdown-extensions from 10.21.3 to 11.0 by @dependabot [bot] in #22630 chore(deps): bump ray from 2.55.0 to 2.56.0 by @dependabot [bot] in #22632 chore(deps): bump httplib2 from 0.31.1 to 0.32.0 by @dependabot [bot] in #22631 Uncategorized chore(deps): bump postcss from 8.5.15 to 8.5.23 in /ui by @dependabot [bot] in #22629 Full Changelog : 3.8.1.dev1...3.8.1.dev2",
+      "published": "2026-07-27T09:11:56+00:00",
+      "summary": "Prefect released a nightly development version 3.8.1.dev2, focusing on dependency updates for core libraries. The release includes minor dependency upgrades via Dependabot for tools like pymdown-extensions, ray, httplib2, and postcss. These changes aim to maintain compatibility and security in the development pipeline.",
       "features": [],
-      "why_it_matters": "Users attempting to access release notes for constraints-3.3.0 may need to check alternative sources or wait for corrected documentation, as no concrete changes or features were identifiable from the provided content."
+      "why_it_matters": "Users relying on these dependencies should monitor for potential compatibility changes, though no major features or breaking changes were introduced in this development release."
     },
     {
       "company": "Prefect",
       "source": "Prefect GitHub Releases",
-      "title": "3.7.9.dev4: Nightly Development Release",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.7.9.dev4",
-      "feed_description": "What's Changed Bug Fixes 🐞 Prevent duplicate server-minted flow-run state timestamps by @devin-ai-integration [bot] in #22512 Full Changelog : 3.7.9.dev3...3.7.9.dev4",
-      "published": "2026-07-18T08:37:18+00:00",
-      "summary": "Prefect released a nightly development version 3.7.9.dev4 focusing on infrastructure improvements. The update addresses an issue preventing duplicate server-minted flow-run state timestamps. This release is part of ongoing development for the 3.7 series, targeting enhanced reliability in workflow orchestration.",
+      "title": "3.8.1.dev1: Nightly Development Release",
+      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.8.1.dev1",
+      "feed_description": "What's Changed Bug Fixes 🐞 Make ConcurrencyContext exit cleanup best-effort by @devin-ai-integration [bot] in #22619 Uncategorized Make Redis concurrency leases cluster-slot safe by @zzstoatzz in #22560 Full Changelog : 3.8.0...3.8.1.dev1",
+      "published": "2026-07-25T08:44:22+00:00",
+      "summary": "Prefect released a nightly development version 3.8.1.dev1 focusing on concurrency management and Redis integration improvements. The update addresses critical issues in ConcurrencyContext cleanup and Redis lease safety for distributed systems. This release is part of ongoing development for the 3.8 series, targeting enhanced reliability in workflow orchestration.",
       "features": [
-        "Fix for duplicate flow-run state timestamps in server-minted states"
+        "Improved ConcurrencyContext exit cleanup to handle termination gracefully",
+        "Redis concurrency lease updates for cluster-slot safety in distributed environments"
       ],
-      "why_it_matters": "This change ensures consistent state tracking in workflows, reducing potential conflicts in distributed systems and improving reliability for orchestration pipelines."
+      "why_it_matters": "These changes enhance system stability and reliability for distributed workflows, particularly in production environments using Redis for concurrency control."
     },
     {
-      "company": "Temporal",
-      "source": "Temporal Official Blog",
-      "title": "Why Temporal is the front-of-shirt sponsor for Crystal Palace",
-      "link": "https://temporal.io/blog/why-temporal-is-front-of-shirt-sponsor-crystal-palace",
-      "feed_description": "Temporal and Crystal Palace are teaming up, uniting fan and developer communities built on a loyalty that's earned, not manufactured.",
-      "published": "2026-07-17T00:00:00+00:00",
-      "summary": "Temporal announced it is the front-of-shirt sponsor of Crystal Palace FC, highlighting the club's technological advancements in football operations. The partnership underscores Temporal's focus on reliable task orchestration, which is critical for football's sensor systems, real-time analytics, and seamless user experiences in services like payment processing and delivery. The collaboration includes stadium tech improvements and youth AI workshops through the Palace for Life Foundation.",
+      "company": "Prefect",
+      "source": "Prefect GitHub Releases",
+      "title": "3.8.0 - You had me at first paint",
+      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.8.0",
+      "feed_description": "Enhancements ➕➕ Add deployment filters to flow run triggers by @samiat4911 in #22319 Make the V2 UI the default for self-hosted servers by @devin-ai-integration [bot] in #22519 Copy additional options when using \"Copy to new run\" in the V2 UI by @devin-ai-integration [bot] in #22567 Add \"Copy to new run\" to the flow run menu in the V2 UI by @devin-ai-integration [bot] in #22565 Make URLs in run logs clickable in the V2 UI by @devin-ai-integration [bot] in #22496 Allow year/month selection and manual typing in date inputs in the V2 UI by @devin-ai-integration [bot] in #22495 Add composable worker initializer to ProcessPoolTaskRunner by @devin-ai-integration [bot] in #22591 Canonicalize legacy setting names across settings handling and documentation generators by @devin-ai-integration [bot] in #22503 Bug Fixes 🐞 Harden RemoteFileSystem path resolution containment and rebuild absolute URLs by @devin-ai-integration [bot] in #22476 Handle module-path entrypoints when generating default pull step by @devin-ai-integration [bot] in #22493 Preserve empty pull: [] in prefect deploy instead of forcing set_working_directory by @devin-ai-integration [bot] in #22490 Prevent duplicate server-minted flow-run state timestamps by @devin-ai-integration [bot] in #22512 Keep flow run watch alive across stream disconnects by @devin-ai-integration [bot] in #22550 Fix db_vacuum retention-override full scan of event_resources by @devin-ai-integration [bot] in #22536 Record lease at acquisition so a cancelled acquire can't leak a slot by @devin-ai-integration [bot] in #22542 Fix deployment search empty state blocking typing in the V2 UI by @devin-ai-integration [bot] in #22497 Guard deployment Parameters tab against missing schema properties by @devin-ai-integration [bot] in #22604 Give TaskRunFilterState.type and TaskRunFilterState.name a default of None by @chuenchen309 in #22526 Preserve stdlib precedence in flow runs by @AkhilTrivediX in #22529 Make zero-limit behavior consistent for core pagination endpoints by @devin-ai-integration [bot] in #22566 Redact API key from lazy logging args in ObfuscateApiKeyFilter by @devin-ai-integration [bot] in #22552 Guard non-thread-safe TTLCache in _read_toml_file with a lock by @devin-ai-integration [bot] in #22571 Fix as_completed timeout enforcement in worker threads and on Windows by @devin-ai-integration [bot] in #22607 Enforce READ COMMITTED isolation for PostgreSQL server transactions by @devin-ai-integration [bot] in #22531 Integrations & Dependencies 🤝 Add IfPossible Docker image pull policy option by @MrJack91 in #22154 Development & Tidiness 🧹 Quote argument-hint YAML values so Copilot CLI ≥1.0.65 loads all skills by @thejesh23 in #22484 Prevent recurring UI dependency PR failures by @devin-ai-integration [bot] in #22541 Cover truncated_to in utilities.text by @eeshsaxena in #22532 Stabilize flaky cleanup renewal and flow-discovery log tests by @devin-ai-integration [bot] in #22572 Documentation 📓 Clarify /api/health vs /api/ready for Kubernetes probes by @br413 in #22500 Document PrivateLink tenant authentication ( vpce-id binding) by @jimid27 in #22498 Update variables concept docs to reflect JSON values and dash support by @devin-ai-integration [bot] in #22501 Fix title in run background tasks documentation by @uinstinct in #22561 Make minor fixes in Docker workflow documentation by @uinstinct in #22585 Update migration timeout guidance to reference PREFECT_SERVER_DATABASE_MIGRATION_TIMEOUT by @github-actions [bot] in #22610 Document initializer / initargs support in ProcessPoolTaskRunner by @github-actions [bot] in #22595 Document new IfPossible Docker image pull policy option by @github-actions [bot] in #22515 Full Changelog : 3.7.8...3.8.0",
+      "published": "2026-07-23T21:49:08+00:00",
+      "summary": "Prefect 3.8.0 introduces updates to the V2 UI, workflow deployment features, and backend stability improvements. Key changes include making the V2 UI the default for self-hosted servers and adding deployment filters to flow run triggers. The release also addresses several UI/UX enhancements and critical system reliability fixes.",
+      "features": [
+        "Make V2 UI the default for self-hosted servers",
+        "Add deployment filters to flow run triggers",
+        "Enable 'Copy to new run' in V2 UI with additional options",
+        "Make URLs in run logs clickable",
+        "Enhance date input with year/month selection",
+        "Add composable worker initializer to ProcessPoolTaskRunner",
+        "Fix API key redaction in lazy logging",
+        "Enforce PostgreSQL READ COMMITTED isolation level",
+        "Introduce IfPossible Docker image pull policy"
+      ],
+      "why_it_matters": "These updates improve workflow management capabilities, enhance UI interactivity, and strengthen system reliability for developers and operations teams managing orchestration workflows."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-weaviate/3.4.0rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-weaviate%2F3.4.0rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-weaviate 3.4.0rc1 release encountered loading errors in the GitHub repository, preventing access to detailed release notes. The release tag appears unverified and may require signature validation. No concrete changes or features were accessible through the provided content.",
       "features": [],
-      "why_it_matters": "The partnership demonstrates Temporal's reliability in mission-critical systems and aligns with its core value of ensuring tasks complete without failure, benefiting both developers and football operations through enhanced automation and user experience."
+      "why_it_matters": "Users cannot access the release details or verify the tag's authenticity due to loading errors, potentially impacting adoption or integration of the provider with Airflow."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-teradata/3.6.1rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-teradata%2F3.6.1rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-teradata package version 3.6.1rc1 was tagged, but the release content could not be loaded due to errors. No detailed release notes or changes were provided in the source material.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release details for this version encountered technical issues, preventing them from reviewing changes or updates to the Teradata provider integration."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-ssh/6.0.0rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-ssh%2F6.0.0rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-ssh 6.0.0rc1 release candidate was published, but no detailed release notes or changes were available in the provided content. The release appears to be a pre-release version with no concrete information about new features or updates.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release details for providers-ssh 6.0.0rc1 may need to check official channels or wait for finalized documentation, as no meaningful changes or features were disclosed in the provided content."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-snowflake/6.15.0rc2",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-snowflake%2F6.15.0rc2",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-snowflake 6.15.0rc2 release encountered loading errors in the GitHub release notes, preventing access to detailed changelog information. The release tag is unverified and requires signature validation per author requirements. No concrete changes or features could be extracted from the corrupted content.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release notes for this version may face obstacles due to technical errors, potentially delaying adoption of new features or bug fixes."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-sftp/6.0.0rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-sftp%2F6.0.0rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-sftp 6.0.0rc1 release was announced, but the associated release notes and content could not be loaded due to technical errors. The release tag exists on GitHub but lacks detailed documentation or changelog information.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release details for providers-sftp 6.0.0rc1 may face obstacles due to incomplete or broken documentation, potentially delaying adoption of new features or bug fixes."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-postgres/7.0.0rc2",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-postgres%2F7.0.0rc2",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-postgres 7.0.0rc2 release encountered loading errors during access, preventing retrieval of detailed release notes. The release tag appears unsigned, which may trigger verification warnings for some contributors. No substantive content or changes were accessible through the provided GitHub release page.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release details for this version may face obstacles due to loading errors and unsigned tags, potentially delaying adoption of new features or fixes."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-pgvector/1.7.3rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-pgvector%2F1.7.3rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-pgvector/1.7.3rc1 release encountered loading errors in the GitHub repository, preventing access to detailed release notes. The tag is unverified and requires signing, which may affect its reliability. No substantive content or changes were available in the provided release data.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release notes for providers-pgvector/1.7.3rc1 may face obstacles due to loading errors and unverified tags, potentially delaying adoption of new features or fixes."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-opensearch/1.11.1rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-opensearch%2F1.11.1rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-opensearch 1.11.1rc1 release was announced, but the release notes could not be loaded from the provided source. The GitHub page encountered multiple loading errors, preventing access to detailed changelog information. This release is part of the Apache Airflow project's provider ecosystem for OpenSearch integration.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release details for this version may need to check alternative sources or wait for the release notes to be properly published, as the current GitHub page is inaccessible."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-openlineage/2.20.0rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-openlineage%2F2.20.0rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-openlineage 2.20.0rc1 release was announced, but the release notes could not be loaded from the GitHub repository due to persistent loading errors. The release tag exists but lacks detailed documentation or changelog information. Users are advised to reload the page or check official channels for updates.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release details for this version may face obstacles due to incomplete or broken documentation, requiring alternative sources for critical update information."
+    },
+    {
+      "company": "Apache Airflow",
+      "source": "Apache Airflow GitHub Releases",
+      "title": "providers-openai/1.8.1rc1",
+      "link": "https://github.com/apache/airflow/releases/tag/providers-openai%2F1.8.1rc1",
+      "feed_description": "Release 2026-07-22 of providers",
+      "published": "2026-07-23T20:26:27+00:00",
+      "summary": "The Apache Airflow providers-openai/1.8.1rc1 release encountered loading errors in the GitHub release notes, preventing access to detailed changelog information. The release tag appears to be incomplete or corrupted, with multiple failed attempts to load content. No concrete changes or features were identified from the provided source material.",
+      "features": [],
+      "why_it_matters": "Users attempting to access release details for providers-openai/1.8.1rc1 may need to check the GitHub repository directly or wait for corrected release notes, as the current content is unavailable."
     },
     {
       "company": "Dagster",
       "source": "Dagster GitHub Releases",
-      "title": "1.13.14 (core) / 0.29.14 (libraries)",
-      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.14",
-      "feed_description": "Bugfixes Fixed a 401 error from the serverless I/O manager when materializing assets in an organization with more than one full deployment. Fixed a 400 error from the serverless I/O manager when materializing assets whose storage keys contain special characters.",
-      "published": "2026-07-16T18:44:46+00:00",
-      "summary": "Dagster released version 1.13.14 (core) and 0.29.14 (libraries), focusing on critical bug fixes for the serverless I/O manager. The updates address specific errors encountered during asset materialization in organizational deployments and storage key handling.",
+      "title": "1.13.15 (core) / 0.29.15 (libraries)",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.15",
+      "feed_description": "New [dagster-snowflake] Added the SnowflakeDbtProjectComponent (Preview) for natively orchestrating dbt projects on Snowflake. Documentation Added documentation for the Dagster MCP server.",
+      "published": "2026-07-23T16:06:31+00:00",
+      "summary": "Dagster released version 1.13.15 (core) and 0.29.15 (libraries), introducing new features and documentation. The update includes a SnowflakeDbtProjectComponent for dbt project orchestration on Snowflake and documentation for the Dagster MCP server.",
       "features": [
-        "Fixed a 401 error in serverless I/O manager for multi-deployment organizations",
-        "Resolved 400 error from serverless I/O manager with special characters in storage keys"
+        "Added SnowflakeDbtProjectComponent (Preview) for native dbt project orchestration on Snowflake",
+        "Documentation added for Dagster MCP server"
       ],
-      "why_it_matters": "These fixes improve reliability for users managing complex deployments and handling special characters in storage keys, ensuring smoother asset materialization processes."
+      "why_it_matters": "Users can now natively orchestrate dbt projects on Snowflake, improving workflow integration. The MCP server documentation helps teams set up and manage monitoring capabilities."
     },
     {
-      "company": "Kestra",
-      "source": "Kestra GitHub Releases",
-      "title": "v2.0.0-rc5",
-      "link": "https://github.com/kestra-io/kestra/releases/tag/v2.0.0-rc5",
-      "feed_description": "v2.0.0-rc5",
-      "published": "2026-07-16T13:56:19+00:00",
-      "summary": "The Kestra v2.0.0-rc5 release encountered loading errors in its GitHub release notes, preventing access to detailed changes. No substantive content or updates were available in the provided release page. The release remains pending proper documentation.",
+      "company": "Argo Workflows",
+      "source": "Argo Workflows GitHub Releases",
+      "title": "v4.1.0-rc1",
+      "link": "https://github.com/argoproj/argo-workflows/releases/tag/v4.1.0-rc1",
+      "feed_description": "Quick Start What's New? Find out on our blog and changelog . Breaking Changes and Known Issues Check the upgrading guide and search for existing issues on GitHub . Installation CLI Mac / Linux Available via curl # Detect OS ARGO_OS= \" darwin \" if [[ \" $( uname -s ) \" != \" Darwin \" ]] ; then ARGO_OS= \" linux \" fi # Download the binary curl -sLO \" https://github.com/argoproj/argo-workflows/releases/download/v4.1.0-rc1/argo- $ARGO_OS -amd64.gz \" # Unzip gunzip \" argo- $ARGO_OS -amd64.gz \" # Make binary executable chmod +x \" argo- $ARGO_OS -amd64 \" # Move binary to path mv \" ./argo- $ARGO_OS -amd64 \" /usr/local/bin/argo # Test installation argo version Controller and Server kubectl create namespace argo kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/download/v4.1.0-rc1/install.yaml",
+      "published": "2026-07-23T11:26:22+00:00",
+      "summary": "Argo Workflows released version 4.1.0-rc1 as a release candidate. The GitHub release page encountered loading errors, preventing full visibility of release notes. Users are directed to the official blog and changelog for detailed information. Breaking changes and known issues are noted but not fully accessible through the release page.",
       "features": [],
-      "why_it_matters": "Users cannot assess new features or changes in this release without access to the complete release notes, impacting adoption and integration planning."
+      "why_it_matters": "Users cannot access detailed release notes or specific changes due to the malfunctioning release page, requiring them to consult alternative sources for critical updates and potential compatibility considerations."
     },
     {
       "company": "Prefect",
       "source": "Prefect GitHub Releases",
-      "title": "3.7.9.dev3: Nightly Development Release",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.7.9.dev3",
-      "feed_description": "What's Changed Bug Fixes 🐞 Preserve empty pull: [] in prefect deploy instead of forcing set_working_directory by @devin-ai-integration [bot] in #22490 Development & Tidiness 🧹 chore(deps): bump actions/setup-node from 6 to 7 by @dependabot [bot] in #22509 Documentation 📓 docs: Add release notes for prefect-databricks==0.4.2 by @devin-ai-integration [bot] in #22514 docs: Add release notes for 6 integration packages by @devin-ai-integration [bot] in #22518 Uncategorized Add docker image pull policy \"always if possible\" by @MrJack91 in #22154 docs: document new \"IfPossible\" Docker image pull policy option by @github-actions[bot] in #22515 fix(prefect-aws): bump aws-cdk CLI to 2.1131.0 by @devin-ai-integration [bot] in #22520 New Contributors @MrJack91 made their first contribution in #22154 Full Changelog : 3.7.9.dev2...3.7.9.dev3",
-      "published": "2026-07-16T08:50:42+00:00",
-      "summary": "Prefect released a nightly development version 3.7.9.dev3 focusing on deployment reliability and dependency updates. Key changes include preserving empty pull configurations in deployments, adding a new Docker image pull policy, and updating AWS CDK CLI dependencies. Documentation improvements for integrations were also included.",
+      "title": "3.7.9.dev7: Nightly Development Release",
+      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.7.9.dev7",
+      "feed_description": "What's Changed Enhancements ➕➕ Expose Kubernetes pod-failure diagnosis as a matchable event label by @devin-ai-integration [bot] in #22577 Development & Tidiness 🧹 chore(deps): bump actions/labeler from 6 to 7 by @dependabot [bot] in #22578 chore(deps): bump the uv-dependencies group across 1 directory with 15 updates by @dependabot [bot] in #22558 chore(deps): bump pyasn1 from 0.6.3 to 0.6.4 by @dependabot [bot] in #22582 fix(tests): stabilize flaky cleanup renewal and flow-discovery log tests by @devin-ai-integration [bot] in #22572 Documentation 📓 docs: minor fixes in docker workflow by @uinstinct in #22585 Uncategorized Guard non-thread-safe TTLCache in _read_toml_file with a lock by @devin-ai-integration [bot] in #22571 chore(deps): bump dompurify from 3.4.11 to 3.4.12 in /ui-v2 by @dependabot [bot] in #22583 chore(deps-dev): bump fast-uri from 3.1.2 to 3.1.4 in /ui-v2 by @dependabot [bot] in #22584 docs: document kubernetes.diagnosis event label for pod-failure matching by @github-actions[bot] in #22586 Add composable worker initializer to ProcessPoolTaskRunner by @chuqCTC in #22591 Full Changelog : 3.7.9.dev6...3.7.9.dev7",
+      "published": "2026-07-23T08:57:09+00:00",
+      "summary": "Prefect released a nightly development version 3.7.9.dev7 focusing on Kubernetes integration improvements, task runner enhancements, and thread safety fixes. Key updates include exposing Kubernetes pod-failure diagnosis as a matchable event label and adding a composable worker initializer to ProcessPoolTaskRunner. The release also addresses thread safety in TTLCache usage.",
       "features": [
-        "Preserve empty pull configurations in prefect deploy",
-        "Added 'IfPossible' Docker image pull policy",
-        "Bumped aws-cdk CLI to version 2.1131.0",
-        "Documentation updates for prefect-databricks and integration packages"
+        "Expose Kubernetes pod-failure diagnosis as a matchable event label",
+        "Add composable worker initializer to ProcessPoolTaskRunner",
+        "Guard non-thread-safe TTLCache with a lock"
       ],
-      "why_it_matters": "Users benefit from improved deployment reliability with the new Docker policy and fixed behavior for empty pull configurations. The AWS CDK update ensures compatibility with latest cloud infrastructure tools."
+      "why_it_matters": "These changes improve Kubernetes monitoring capabilities, enhance task runner flexibility, and increase stability in multi-threaded environments, benefiting developers managing complex workflows."
     },
     {
       "company": "Temporal",
       "source": "Temporal Official Blog",
-      "title": "LangGraph in production: Temporal's LangGraph Plugin adds Durable Execution",
-      "link": "https://temporal.io/blog/temporal-langgraph-plugin-durable-execution",
-      "feed_description": "LangGraph agents now run on Temporal: automatic crash recovery, free human-in-the-loop waits, and full observability via new LangSmith integration.",
-      "published": "2026-07-16T00:00:00+00:00",
-      "summary": "Temporal announced a public preview release of its LangGraph plugin, enabling seamless integration of LangGraph agents with Temporal's durable execution platform. The integration allows LangGraph workflows to run without code changes, providing automatic failure recovery, long-running human-in-the-loop steps, and production-grade reliability. LangSmith integrations for Python and TypeScript are also now in public preview.",
+      "title": "The foundation: Why Temporal for a data pipeline?",
+      "link": "https://temporal.io/blog/the-foundation-why-temporal-for-a-data-pipeline",
+      "feed_description": "How to justify Temporal for a regulated data pipeline: the requirements, the naive approach, and why Durable Execution wins on resilience and auditability.",
+      "published": "2026-07-23T00:00:00+00:00",
+      "summary": "Temporal is highlighted as the orchestration layer for a PII-compliant data pipeline processing customer complaints. The pipeline handles CSV ingestion, PII redaction, classification, semantic search, and compliance requirements without exposing raw data. Key features include durable execution, retries, and state persistence to ensure data resilience and auditability.",
       "features": [
-        "Durable execution of LangGraph workflows via Temporal Workflows and Activities",
-        "Automatic recovery from failures with checkpointed state resumption",
-        "Support for human-in-the-loop steps with durable waits (signals/timers)",
-        "Handling of long-running agents with continue-as-new and state persistence",
-        "Integration with LangGraph's Graph API and Functional API",
-        "LangSmith observability for trace context across distributed executions"
+        "Durable Execution for workflow resumption after failures",
+        "Retry mechanisms with progress tracking for ingestion",
+        "State persistence via Redis/Postgres for consistency",
+        "Integration with vector databases for semantic search"
       ],
-      "why_it_matters": "Developers can now deploy LangGraph agents in production with reliable recovery and scalability, eliminating manual orchestration while maintaining LangGraph's workflow definition capabilities."
+      "why_it_matters": "Temporal's capabilities ensure compliance with data privacy regulations and operational resilience, critical for enterprises handling sensitive customer information in complex data pipelines."
     },
     {
-      "company": "Prefect",
-      "source": "Prefect GitHub Releases",
-      "title": "prefect-aws-0.7.10: fix(prefect-aws): bump aws-cdk CLI to 2.1131.0 (#22520)",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/prefect-aws-0.7.10",
-      "feed_description": "Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com> Co-authored-by: Alex Streed alex.s@prefect.io Co-authored-by: alex.s ajstreed1@gmail.com",
-      "published": "2026-07-15T18:29:10+00:00",
-      "summary": "Prefect released version 0.7.10 of the prefect-aws integration, which includes an update to the AWS CDK CLI to version 2.1131.0. This change addresses compatibility and functionality improvements related to AWS infrastructure deployment.",
-      "features": [
-        "Bumped AWS CDK CLI to version 2.1131.0"
-      ],
-      "why_it_matters": "This update ensures compatibility with the latest AWS CDK features and security patches, improving reliability for cloud infrastructure workflows."
-    },
-    {
-      "company": "Prefect",
-      "source": "Prefect GitHub Releases",
-      "title": "prefect-redis-0.2.13: docs: Add release notes for 6 integration packages (#22518)",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/prefect-redis-0.2.13",
-      "feed_description": "Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com> Co-authored-by: Alex Streed alex.s@prefect.io Co-authored-by: alex.s ajstreed1@gmail.com",
-      "published": "2026-07-15T17:55:38+00:00",
-      "summary": "Prefect released prefect-redis-0.2.13, adding release notes for 6 integration packages. The update focuses on documentation improvements for Redis integration packages. No functional changes or new features were introduced in this release.",
+      "company": "Argo Workflows",
+      "source": "Argo Workflows GitHub Releases",
+      "title": "v3.7.17",
+      "link": "https://github.com/argoproj/argo-workflows/releases/tag/v3.7.17",
+      "feed_description": "Quick Start What's New? Find out on our blog and changelog . Breaking Changes and Known Issues Check the upgrading guide and search for existing issues on GitHub . Installation CLI Mac / Linux Available via curl # Detect OS ARGO_OS= \" darwin \" if [[ \" $( uname -s ) \" != \" Darwin \" ]] ; then ARGO_OS= \" linux \" fi # Download the binary curl -sLO \" https://github.com/argoproj/argo-workflows/releases/download/v3.7.17/argo- $ARGO_OS -amd64.gz \" # Unzip gunzip \" argo- $ARGO_OS -amd64.gz \" # Make binary executable chmod +x \" argo- $ARGO_OS -amd64 \" # Move binary to path mv \" ./argo- $ARGO_OS -amd64 \" /usr/local/bin/argo # Test installation argo version Controller and Server kubectl create namespace argo kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/download/v3.7.17/install.yaml",
+      "published": "2026-07-22T10:50:53+00:00",
+      "summary": "Argo Workflows v3.7.17 was released, but the content for this release could not be loaded properly from the GitHub repository. The release page appears to have technical issues preventing access to detailed changelog information.",
       "features": [],
-      "why_it_matters": "Developers can now reference updated documentation for Redis integration packages, improving clarity and maintenance of workflow orchestration setups."
+      "why_it_matters": "Users attempting to access release notes or changelog details for v3.7.17 may need to check official channels or wait for resolved technical issues with the GitHub page."
     },
     {
-      "company": "Prefect",
-      "source": "Prefect GitHub Releases",
-      "title": "prefect-kubernetes-0.7.11: docs: Add release notes for 6 integration packages (#22518)",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/prefect-kubernetes-0.7.11",
-      "feed_description": "Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com> Co-authored-by: Alex Streed alex.s@prefect.io Co-authored-by: alex.s ajstreed1@gmail.com",
-      "published": "2026-07-15T17:55:38+00:00",
-      "summary": "Prefect released version 0.7.11 of the prefect-kubernetes package, focusing on documentation updates for six integration packages. The release includes enhanced release notes to improve clarity and usability for developers. This update addresses documentation gaps without introducing new functional changes.",
-      "features": [
-        "Documentation updates for six integration packages",
-        "Enhanced release notes for improved clarity"
-      ],
-      "why_it_matters": "Developers using Prefect's Kubernetes integration will benefit from clearer documentation, simplifying setup and troubleshooting for the listed packages."
-    },
-    {
-      "company": "Prefect",
-      "source": "Prefect GitHub Releases",
-      "title": "prefect-gcp-0.6.21: docs: Add release notes for 6 integration packages (#22518)",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/prefect-gcp-0.6.21",
-      "feed_description": "Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com> Co-authored-by: Alex Streed alex.s@prefect.io Co-authored-by: alex.s ajstreed1@gmail.com",
-      "published": "2026-07-15T17:55:38+00:00",
-      "summary": "Prefect released version 0.6.21 of the prefect-gcp package, focusing on documentation updates for six integration packages. The release includes detailed release notes for these packages, improving transparency about changes and enhancements. This update addresses documentation gaps to better support users working with Google Cloud integrations.",
-      "features": [
-        "Documentation updates for six integration packages",
-        "Detailed release notes for enhanced transparency"
-      ],
-      "why_it_matters": "Developers and operators using Google Cloud integrations will benefit from clearer documentation to understand changes, troubleshoot issues, and maintain workflows effectively."
-    },
-    {
-      "company": "Prefect",
-      "source": "Prefect GitHub Releases",
-      "title": "prefect-docker-0.7.3: docs: Add release notes for 6 integration packages (#22518)",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/prefect-docker-0.7.3",
-      "feed_description": "Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com> Co-authored-by: Alex Streed alex.s@prefect.io Co-authored-by: alex.s ajstreed1@gmail.com",
-      "published": "2026-07-15T17:55:38+00:00",
-      "summary": "The Prefect Docker package 0.7.3 release includes updated documentation for six integration packages. The release notes were added to provide clearer information about these integrations. The GitHub page encountered loading errors, preventing full details from being displayed.",
+      "company": "Argo Workflows",
+      "source": "Argo Workflows GitHub Releases",
+      "title": "v4.0.8",
+      "link": "https://github.com/argoproj/argo-workflows/releases/tag/v4.0.8",
+      "feed_description": "Quick Start What's New? Find out on our blog and changelog . Breaking Changes and Known Issues Check the upgrading guide and search for existing issues on GitHub . Installation CLI Mac / Linux Available via curl # Detect OS ARGO_OS= \" darwin \" if [[ \" $( uname -s ) \" != \" Darwin \" ]] ; then ARGO_OS= \" linux \" fi # Download the binary curl -sLO \" https://github.com/argoproj/argo-workflows/releases/download/v4.0.8/argo- $ARGO_OS -amd64.gz \" # Unzip gunzip \" argo- $ARGO_OS -amd64.gz \" # Make binary executable chmod +x \" argo- $ARGO_OS -amd64 \" # Move binary to path mv \" ./argo- $ARGO_OS -amd64 \" /usr/local/bin/argo # Test installation argo version Controller and Server kubectl create namespace argo kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/download/v4.0.8/install.yaml",
+      "published": "2026-07-22T10:28:15+00:00",
+      "summary": "Argo Workflows v4.0.8 was released but the GitHub release page encountered loading errors, preventing access to detailed release notes. The release may contain updates or fixes, but no concrete information was available in the provided content.",
       "features": [],
-      "why_it_matters": "Users may need to revisit the GitHub page after resolving loading issues to access detailed integration updates. The documentation improvements could help developers better understand and utilize the integration packages."
-    },
-    {
-      "company": "Prefect",
-      "source": "Prefect GitHub Releases",
-      "title": "prefect-azure-0.4.12: docs: Add release notes for 6 integration packages (#22518)",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/prefect-azure-0.4.12",
-      "feed_description": "Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com> Co-authored-by: Alex Streed alex.s@prefect.io Co-authored-by: alex.s ajstreed1@gmail.com",
-      "published": "2026-07-15T17:55:38+00:00",
-      "summary": "The Prefect GitHub release prefect-azure-0.4.12 appears to have encountered loading errors, preventing access to detailed release notes. The release title mentions adding documentation for 6 integration packages, but no substantive changes or features were visible in the content. The release page is currently non-functional due to technical issues.",
-      "features": [],
-      "why_it_matters": "Users attempting to access release notes for Prefect's Azure integration may face obstacles due to a broken release page, potentially delaying adoption of new features or documentation updates."
+      "why_it_matters": "Users attempting to access release details for v4.0.8 may need to check official channels or wait for corrected documentation to verify changes impacting workflow orchestration capabilities."
     },
     {
       "company": "Kestra",
       "source": "Kestra GitHub Releases",
-      "title": "v0.22.46",
-      "link": "https://github.com/kestra-io/kestra/releases/tag/v0.22.46",
-      "feed_description": "Changelog 📘 Subtasks version 2a1f221 update to version '0.22.46' 🐛 Bug Fixes tasks f08b292 skip Docker VOLUME output download when nothing is declared ( #17311 ) ( #17334 ), closes #17311 #17316 #17334 Contributors We'd like to thank the following people for their contributions: GitHub, MAIRE Jérémy, github-actions[bot]",
-      "published": "2026-07-15T15:02:05+00:00",
-      "summary": "Kestra released version 0.22.46, focusing on improving workflow orchestration efficiency. The update includes a critical fix for Docker VOLUME output handling. Contributors acknowledged include GitHub and MAIRE Jérémy.",
+      "title": "v1.0.52",
+      "link": "https://github.com/kestra-io/kestra/releases/tag/v1.0.52",
+      "feed_description": "Changelog 🚀 Features execution c47b4ef possible NoSuchElementException on State.getEndDate 📘 Subtasks version f458f52 update to version '1.0.52' 407551e downgrade to version '1.0.51' 2468f4d update to version '1.0.52' 027baec downgrade to version '1.0.51' 78c31de update to version '1.0.52' 25f437c downgrade to version '1.0.51' 52b5bdb update to version '1.0.52' 🐛 Bug Fixes executions 2766462 remove dangling DateFilter import in ExecutionController storage-local 5ad2222 handle spaces in filenames during URI creation ( #16178 ), closes #16178 webserver 812c746 capture OTel context before reactive chain in createExecution 🏭 Tests core dfb7fe6 drop StateTest cases for duration API absent on 1.0.x Contributors We'd like to thank the following people for their contributions: Loïc Mathieu, Miloš Paunović, Shivam Wayal, github-actions[bot], nKwiatkowski",
+      "published": "2026-07-22T09:57:30+00:00",
+      "summary": "Kestra released version 1.0.52 with several bug fixes and maintenance updates. The release addresses issues related to state management, file handling, and observability integrations. Version rollbacks to 1.0.51 were part of the release process before stabilizing at 1.0.52.",
       "features": [
-        "Skip Docker VOLUME output download when no data is declared (addresses #17311)"
+        "Fix for possible NoSuchElementException in State.getEndDate",
+        "Handling spaces in filenames during URI creation",
+        "Capture OTel context before reactive chain in createExecution",
+        "Removal of dangling DateFilter import in ExecutionController"
       ],
-      "why_it_matters": "This change reduces unnecessary data transfer overhead in Docker workflows, improving resource efficiency for users leveraging Kestra's orchestration capabilities."
+      "why_it_matters": "These updates improve reliability for state management and file operations, enhance observability with OTel, and resolve compatibility issues in execution controllers."
     },
     {
       "company": "Prefect",
       "source": "Prefect GitHub Releases",
-      "title": "prefect-databricks-0.4.2: docs: Add release notes for `prefect-databricks==0.4.2` (#22514)",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/prefect-databricks-0.4.2",
-      "feed_description": "Co-authored-by: Devin AI <158243242+devin-ai-integration[bot]@users.noreply.github.com> Co-authored-by: desertaxle alex.s@prefect.io Co-authored-by: alex.s ajstreed1@gmail.com",
-      "published": "2026-07-15T14:52:26+00:00",
-      "summary": "Prefect released version 0.4.2 of the prefect-databricks integration, primarily focused on updating documentation to include release notes for this version. The release emphasizes improved documentation clarity for users working with Databricks workflows.",
-      "features": [],
-      "why_it_matters": "Users can now reference detailed release notes for prefect-databricks 0.4.2, aiding in understanding changes and improvements for Databricks integration workflows."
-    },
-    {
-      "company": "Kestra",
-      "source": "Kestra GitHub Releases",
-      "title": "v2.0.0-rc4",
-      "link": "https://github.com/kestra-io/kestra/releases/tag/v2.0.0-rc4",
-      "feed_description": "v2.0.0-rc4",
-      "published": "2026-07-15T14:30:30+00:00",
-      "summary": "The Kestra v2.0.0-rc4 release encountered loading errors in its GitHub release notes, preventing access to detailed changes. No valid content was available for extraction at the time of processing.",
-      "features": [],
-      "why_it_matters": "Users attempting to access release notes for Kestra v2.0.0-rc4 may need to reload the page or check the repository for updated documentation."
-    },
-    {
-      "company": "Kestra",
-      "source": "Kestra GitHub Releases",
-      "title": "v1.3.28",
-      "link": "https://github.com/kestra-io/kestra/releases/tag/v1.3.28",
-      "feed_description": "Changelog 📘 Subtasks version 4293c7d update to version '1.3.28' 🐛 Bug Fixes chart ee66351 allow explicit replicas 0 on a deployment ( #17206 ), closes #17206 core 3e12e2e lower-case Windows drive letter with Locale.ROOT ec72861 clear error when proxy address is set without a port jdbc-mysql 6a46cf2 resolve duplicate V1_57 Flyway migration version, closes #17329 logs 3027b48 widen logs/metrics task_id column to 256 to match Task.id max size ( #17329 ), closes #17328 #17329 namespaces 4f57439 make namespace_file_metadata case-sensitive on MySQL, closes #17305 global abfd21e non-forced plugin defaults in a parent > child relationship now compose in a single pass ( #17359 ), closes #17359 Contributors We'd like to thank the following people for their contributions: Anas Khan, GitHub, Loïc Mathieu, Malay Dewangan, Marco Sabatini, Nicolas K., Roman Acevedo, YannC, YannC., github-actions[bot], nKwiatkowski",
-      "published": "2026-07-15T14:30:05+00:00",
-      "summary": "Kestra released version 1.3.28 with several bug fixes and improvements. Key changes include resolving issues with proxy configurations, Flyway migration versions, task ID column sizing, and MySQL case sensitivity. The update also addresses deployment replica settings and plugin composition logic.",
+      "title": "3.7.9.dev6: Nightly Development Release",
+      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.7.9.dev6",
+      "feed_description": "What's Changed Enhancements ➕➕ Copy additional options when using \"Copy to new run\" in V2 UI by @devin-ai-integration [bot] in #22567 Bug Fixes 🐞 Add \"Copy to new run\" to flow run menu in ui-v2 by @devin-ai-integration [bot] in #22565 Development & Tidiness 🧹 chore(deps): bump pillow from 12.2.0 to 12.3.0 by @dependabot [bot] in #22562 Documentation 📓 docs: fix title in run background tasks by @uinstinct in #22561 Uncategorized fix(runner): preserve stdlib precedence in flow runs by @AkhilTrivediX in #22529 chore(deps): bump the ui-v2-dependencies group across 1 directory with 34 updates by @dependabot [bot] in #22556 fix(server/api): consistent zero-limit behavior for core pagination endpoints by @devin-ai-integration [bot] in #22566 Redact API key from lazy logging args in ObfuscateApiKeyFilter by @devin-ai-integration [bot] in #22552 New Contributors @uinstinct made their first contribution in #22561 @AkhilTrivediX made their first contribution in #22529 Full Changelog : 3.7.9.dev5...3.7.9.dev6",
+      "published": "2026-07-22T08:56:26+00:00",
+      "summary": "Prefect released a nightly development version 3.7.9.dev6 focusing on UI improvements, security enhancements, and bug fixes. Key changes include workflow run duplication features in the V2 UI and improved API key handling in logging. The release addresses pagination consistency and standard library precedence in flow runs.",
       "features": [
-        "Allow explicit replicas 0 on deployments",
-        "Fix proxy address error when port is missing",
-        "Resolve duplicate Flyway migration version V1_57",
-        "Widen task_id column to 256 characters for logs/metrics",
-        "Make namespace_file_metadata case-sensitive on MySQL",
-        "Improve plugin default composition in parent-child relationships"
+        "Added 'Copy to new run' option in V2 UI for workflow runs",
+        "Redacted API keys from lazy logging arguments in ObfuscateApiKeyFilter",
+        "Fixed consistent zero-limit behavior for core pagination endpoints",
+        "Preserved stdlib precedence in flow runner configurations"
       ],
-      "why_it_matters": "These updates enhance system reliability, fix compatibility issues, and improve configuration flexibility for Kubernetes deployments and database interactions."
+      "why_it_matters": "Users benefit from enhanced workflow management capabilities and improved security practices, particularly for handling sensitive credentials in logging and API interactions."
     },
     {
       "company": "Kestra",
       "source": "Kestra GitHub Releases",
-      "title": "v1.0.51",
-      "link": "https://github.com/kestra-io/kestra/releases/tag/v1.0.51",
-      "feed_description": "Changelog 📘 Subtasks version 1cf934e update to version '1.0.51' 🐛 Bug Fixes core f7d9241 lower-case Windows drive letter with Locale.ROOT Contributors We'd like to thank the following people for their contributions: Anas Khan, Loïc Mathieu, github-actions[bot]",
-      "published": "2026-07-15T11:14:57+00:00",
-      "summary": "Kestra released version 1.0.51 with a focus on improving compatibility and stability. The update includes a fix for Windows drive letter handling using Locale.ROOT. Contributors Anas Khan, Loïc Mathieu, and github-actions[bot] were acknowledged for their work.",
+      "title": "v1.3.29",
+      "link": "https://github.com/kestra-io/kestra/releases/tag/v1.3.29",
+      "feed_description": "Changelog 🚀 Features execution 64bfb06 possible NoSuchElementException on State.getEndDate 📘 Subtasks version 66829aa update to version '1.3.29' ae2f02c update to version '1.3.52' 3791549 update to version '1.3.39' global 0d651eb put back 1.3.28 version 🐛 Bug Fixes storage-local 8d60c14 handle spaces in filenames during URI creation ( #16178 ), closes #16178 triggers 42bcafd bound polling trigger evaluation with a timeout to prevent silent lock leaks ( #17446 ), closes #17445 #17446 webserver bcf9afc capture OTel context before reactive chain in createExecution Contributors We'd like to thank the following people for their contributions: GitHub, Loïc Mathieu, Miloš Paunović, Nicolas K., Shivam Wayal, github-actions[bot], nKwiatkowski",
+      "published": "2026-07-21T13:06:11+00:00",
+      "summary": "Kestra released version 1.3.29 with critical fixes and updates. The release addresses issues with state end date retrieval, filename handling in URI creation, and polling trigger timeouts. It also includes updates to versioning and OpenTelemetry context capture in execution creation.",
       "features": [
-        "Fix for lower-case Windows drive letter conversion using Locale.ROOT",
-        "Version update to 1.0.51"
+        "Fix for possible NoSuchElementException in State.getEndDate",
+        "Handle spaces in filenames during URI creation",
+        "Bound polling trigger evaluation with timeout to prevent lock leaks",
+        "Capture OTel context before reactive chain in createExecution"
       ],
-      "why_it_matters": "The Windows drive letter fix improves compatibility for users operating in locale-sensitive environments, ensuring consistent behavior across different system configurations."
+      "why_it_matters": "These updates improve workflow reliability, prevent resource leaks, and enhance observability for developers managing orchestration pipelines."
     },
     {
       "company": "Prefect",
       "source": "Prefect GitHub Releases",
-      "title": "3.7.9.dev2: Nightly Development Release",
-      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.7.9.dev2",
-      "feed_description": "What's Changed Bug Fixes 🐞 Handle module-path entrypoints when generating default pull step by @devin-ai-integration [bot] in #22493 docs: clarify /api/health vs /api/ready for Kubernetes probes by @br413 in #22500 Documentation 📓 docs: document PrivateLink tenant authentication (vpce-id binding) by @jimid27 in #22498 Update variables concept docs to reflect JSON values and dash support by @devin-ai-integration [bot] in #22501 Uncategorized fix: quote argument-hint YAML values so Copilot CLI ≥1.0.65 loads all skills (closes #22483 ) by @thejesh23 in #22484 New Contributors @thejesh23 made their first contribution in #22484 @br413 made their first contribution in #22500 Full Changelog : 3.7.9.dev1...3.7.9.dev2",
-      "published": "2026-07-15T08:50:42+00:00",
-      "summary": "Prefect released a nightly development version 3.7.9.dev2 focusing on documentation clarifications and critical bug fixes. The update addresses issues with Copilot CLI argument parsing and improves Kubernetes probe endpoint documentation. Changes also include enhancements for PrivateLink tenant authentication configuration.",
+      "title": "3.7.9.dev5: Nightly Development Release",
+      "link": "https://github.com/PrefectHQ/prefect/releases/tag/3.7.9.dev5",
+      "feed_description": "What's Changed Enhancements ➕➕ Make UI V2 the default for self-hosted servers by @devin-ai-integration [bot] in #22519 Bug Fixes 🐞 Catch Abort in Kubernetes observer crash-mark to keep Jobs watcher alive by @devin-ai-integration [bot] in #22555 Development & Tidiness 🧹 chore(deps): bump actions/setup-python from 6 to 7 by @dependabot [bot] in #22544 chore(deps-dev): bump the python-dependencies group with 2 updates by @dependabot [bot] in #22522 fix(concurrency): record lease at acquisition so a cancelled acquire can't leak a slot by @devin-ai-integration [bot] in #22542 Documentation 📓 Enforce READ COMMITTED for PostgreSQL server transactions by @devin-ai-integration [bot] in #22531 Uncategorized test: cover truncated_to in utilities.text by @eeshsaxena in #22532 chore(deps): bump the ui-v2-dependencies group across 1 directory with 19 updates by @dependabot [bot] in #22530 rm cw from codeowners by @zzstoatzz in #22540 Prevent recurring UI dependency PR failures by @devin-ai-integration [bot] in #22541 chore(deps-dev): bump the eslint group in /ui-v2 with 2 updates by @dependabot [bot] in #22545 chore(deps): bump axios from 1.16.0 to 1.18.1 in /ui by @dependabot [bot] in #22554 chore(deps-dev): bump @biomejs/biome from 2.5.3 to 2.5.4 in /ui-v2 in the biome group by @dependabot [bot] in #22546 Give TaskRunFilterState.type and .name a default of None by @chuenchen309 in #22526 docs: canonicalize legacy setting names and update generators by @devin-ai-integration [bot] in #22503 New Contributors @chuenchen309 made their first contribution in #22526 Full Changelog : 3.7.9.dev4...3.7.9.dev5",
+      "published": "2026-07-21T08:57:41+00:00",
+      "summary": "Prefect released a nightly development version 3.7.9.dev5 focusing on UI/UX improvements, Kubernetes resilience, and database configuration updates. The release includes changes to default UI settings, crash-handling mechanisms, and transaction isolation levels. Key updates target stability and user experience in self-hosted environments.",
       "features": [
-        "Fix for Copilot CLI argument-hint YAML parsing to support skills loading with ≥1.0.65 version",
-        "Documentation clarification of /api/health vs /api/ready endpoints for Kubernetes probes",
-        "Documentation update for PrivateLink tenant authentication (VPCE-ID binding) configuration"
+        "Make UI V2 the default for self-hosted servers",
+        "Fix Kubernetes observer crash-mark handling for Job watcher resilience",
+        "Enforce READ COMMITTED isolation level for PostgreSQL transactions"
       ],
-      "why_it_matters": "These updates improve reliability for Copilot CLI users and clarify critical Kubernetes integration points, helping teams avoid configuration errors in production environments."
-    },
-    {
-      "company": "Astronomer",
-      "source": "Astro Product Releases",
-      "title": "July 15, 2026",
-      "link": "https://www.astronomer.io/docs/astro/release-notes#july-15-2026",
-      "feed_description": "Try the new Astro experience This feature is in Preview . Astro's navigation now gives you a single view across your entire Organization instead of a single Workspace. Deployments, Dags, and Astro IDE projects all appear across Workspaces in one view, with Workspace context on every row. Filter to a specific Workspace when you need to, or work from the full picture across your Organization. Workspace, Organization, and personal settings now share a single settings layout. The homepage also surfaces: Recently Failed Dags : An Organization-wide table of failing Dags, sorted by failure rate, with time-range filters. Each row shows the Workspace and Deployment, run history, and two actions: Investigate with Otto and Open in Airflow . Jump Back In : A strip of recently visited Deployments, Dags, data products, and Astro IDE projects. Favorite Deployments : An Organization-wide view of Deployment health with All , Healthy , and Hibernating status filters. Each card shows status, cluster and repository context, and four metrics: Dag Runs, Tasks, Worker CPU, and Worker Memory. You can favorite Dags (Airflow 3.1+) and Deployments to pin them to the top of these views and filter to only your favorites. Enable the new experience from the banner in Astro. To switch back, go to Your Profile , click Edit next to Astronomer Labs , and turn off the Astro Next toggle. Switching between experiences doesn't change your pipelines or configuration.",
-      "published": "2026-07-15T00:00:00+00:00",
-      "summary": "Astronomer released updates on July 15, 2026, including new features like Astro Next experience, Sub-Second Pipelines, and Otto integration. Key changes involve improved DAG management, deployment testing, and security enhancements. The release also introduces disaster recovery tools and environment object promotion.",
-      "features": [
-        "Astro Next experience: Organization-wide views for Deployments, Dags, and IDE projects with Workspace filtering",
-        "Sub-Second Pipelines for Airflow 3.2+ deployments with event-driven scheduling and high-throughput support",
-        "Otto integration for pull request reviews, Dag failure investigation, and code suggestions",
-        "DAG-level access control with role-based permissions for deployments",
-        "Environment Manager migration tools for connections/variables",
-        "Disaster recovery configuration tab for clusters",
-        "IP access list protection against accidental self-lockout"
-      ],
-      "why_it_matters": "These updates improve collaboration, security, and performance for data teams managing Airflow workflows, with enhanced monitoring, faster pipeline execution, and better access control."
-    },
-    {
-      "company": "Apache Airflow",
-      "source": "Apache Airflow GitHub Releases",
-      "title": "python-client/3.3.0",
-      "link": "https://github.com/apache/airflow/releases/tag/python-client%2F3.3.0",
-      "feed_description": "Airflow Python Client 3.3.0",
-      "published": "2026-07-14T13:54:50+00:00",
-      "summary": "The Apache Airflow Python client 3.3.0 release encountered loading errors on the GitHub page, preventing access to detailed release notes. The release tag appears to be incomplete or inaccessible at this time. No concrete changes or features can be confirmed from the provided content.",
-      "features": [],
-      "why_it_matters": "Users attempting to access release details for Apache Airflow Python client 3.3.0 may face obstacles due to incomplete or inaccessible release notes, requiring manual verification through alternative sources."
+      "why_it_matters": "These changes improve reliability for Kubernetes workloads and database interactions, while modernizing the user interface for better self-hosted server management."
     },
     {
       "company": "Temporal",
       "source": "Temporal Official Blog",
-      "title": "Why a context engine needs Durable Execution: How Unblocked rebuilt its ingestion backbone on Temporal",
-      "link": "https://temporal.io/blog/why-a-context-engine-needs-durable-execution-how-unblocked-rebuilt-its-ingestion-backbone-on-temporal",
-      "feed_description": "See how Unblocked replaced bespoke ingestion orchestration with Temporal to run 1 million durable, observable AI context Workflows every day.",
-      "published": "2026-07-14T00:00:00+00:00",
-      "summary": "Unblocked rebuilt its ingestion backbone using Temporal's Durable Execution to handle continuous, cross-source computation for its AI context engine. The migration replaced a custom actor model with Temporal's polyglot SDK and durable workflows, enabling resilience to failures and simplifying orchestration. The system now supports over 3.6 million active workflows across data sources, with code ingestion transitioning from Prefect.",
+      "title": "I had two weeks, an 8-foot keyboard, and a Wordle Workflow",
+      "link": "https://temporal.io/blog/i-had-two-weeks-an-8-foot-keyboard-and-a-wordle-workflow",
+      "feed_description": "A Wordle clone, an 8-foot keyboard, and a holographic fan display made Temporal's Durable Execution visible at AI Engineer World's Fair.",
+      "published": "2026-07-21T00:00:00+00:00",
+      "summary": "Temporal showcased a Durable Wordle project at AI Engineer World's Fair, using Workflows to manage game state through an 8-foot keyboard and holographic fan displays. The project demonstrated Temporal's ability to handle durable, real-time state management in interactive experiences. Key challenges included integrating physical hardware with workflows and ensuring reliable state persistence during live demos.",
       "features": [
-        "Durable Execution for continuous state computation across heterogeneous sources",
-        "Polyglot SDK support (Kotlin, TypeScript, Python)",
-        "Deployment-free workflows with automatic checkpoint resumption",
-        "Observability via Temporal UI replacing custom admin tools",
-        "Integration with Asana, CI, Slack, and other data sources"
+        "Workflow-as-state architecture for Wordle game logic",
+        "Holographic fan display integration for real-time workflow visualization",
+        "CLI and browser-based UI options for game interaction",
+        "Deployment process improvements for live booth updates",
+        "Activity-based validation and feedback system"
       ],
-      "why_it_matters": "Temporal's durable workflows enable Unblocked to maintain accurate, real-time context for AI agents without caching, reducing operational complexity and improving reliability for developers and data teams."
+      "why_it_matters": "Demonstrates Temporal's capability to manage complex, durable state in interactive applications, providing a blueprint for real-time systems requiring reliable workflow execution and visualization."
     },
     {
       "company": "Astronomer",
       "source": "Astro Product Releases",
       "title": "Astro Observe data quality now in Preview",
       "link": "https://www.astronomer.io/docs/astro/release-notes#astro-observe-data-quality-now-in-preview",
-      "feed_description": "This feature is in Preview . Astro Observe data quality for Snowflake and Databricks is now available in Preview. Data quality helps you monitor tables and columns for data quality issues including row volume changes, schema changes, and null columns, alerting on issues and displaying upstream and downstream table-level lineage to help keep your data accurate and complete. See data quality for setup and more information. Additional improvements Astro Observe SLAs now support flexible cron-based schedules to capture complex business logic and allow more control over SLA sensitivity.",
+      "feed_description": "Preview This feature is in Preview . Astro Observe data quality for Snowflake and Databricks is now available in Preview. Data quality helps you monitor tables and columns for data quality issues including row volume changes, schema changes, and null columns, alerting on issues and displaying upstream and downstream table-level lineage to help keep your data accurate and complete. See data quality for setup and more information. Additional improvements Astro Observe SLAs now support flexible cron-based schedules to capture complex business logic and allow more control over SLA sensitivity.",
       "published": null,
-      "summary": "Astronomer released Astro Observe data quality in preview, enhancing monitoring capabilities. Key updates include improved deployment analytics, Sub-Second Pipelines for high-throughput workflows, and Otto integration for code reviews. The release also introduces DAG-level access control and environment object promotion features.",
+      "summary": "Astronomer released Astro Observe data quality in preview, enhancing monitoring capabilities. Key updates include Otto integration for code reviews, Sub-Second Pipelines for high-throughput workflows, and improved Deployment analytics. The Astro CLI 1.42.1, Runtime 3.3-2, and Remote Execution Agent 1.8.1 are now available.",
       "features": [
         "Astro Observe data quality preview for monitoring",
-        "Sub-Second Pipelines for Airflow 3.2+ deployments",
-        "Otto integration for pull request code reviews",
-        "DAG-level access control with role-based permissions",
-        "Deployment analytics enhancements with expanded metrics",
-        "IP access list protection against accidental lockout",
-        "Environment Manager migration for connections/variables",
-        "Recently Failed Dags table with failure rate sorting"
+        "Otto code review integration for pull requests and merge requests",
+        "Sub-Second Pipelines for Airflow 3.2+ deployments with event-driven scheduling",
+        "Enhanced Deployment analytics with Kubernetes executor coverage",
+        "DAG-level access control for role-based permissions",
+        "IP access list protection to prevent accidental lockout",
+        "Testing against existing deployments in Astro IDE",
+        "Environment Manager migration for connections and variables"
       ],
-      "why_it_matters": "These updates improve workflow monitoring, security, and collaboration while enhancing performance for high-throughput tasks, providing better visibility into deployment health and code quality."
+      "why_it_matters": "These updates improve workflow reliability, security, and collaboration, enabling teams to monitor pipelines more effectively, automate code reviews, and manage resources with finer granularity."
     }
   ]
 }
